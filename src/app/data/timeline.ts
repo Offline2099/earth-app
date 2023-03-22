@@ -189,7 +189,7 @@ const Cretaceous: Period = {
 }
 
 const Paleogene: Period = {
-  name: 'Cretaceous',
+  name: 'Paleogene',
   start: 66,
   end: 23,
   epochs: [Paleocene, Eocene, Oligocene]
@@ -206,7 +206,7 @@ const Quaternary: Period = {
   name: 'Quaternary',
   start: 2.58,
   end: 0,
-  epochs: []
+  epochs: [Pleistocene, Holocene]
 }
 
 
