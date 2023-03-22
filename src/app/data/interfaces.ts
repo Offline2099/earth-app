@@ -11,7 +11,7 @@ export interface Period {
   start: number;
   end: number;
   epochs: Epoch[];
-  description?: string[];
+  description: string[];
 }
 
 export interface Era {
@@ -19,7 +19,7 @@ export interface Era {
   start: number;
   end: number;
   periods: Period[];
-  description?: string[];
+  description: string[];
 }
 
 export interface Eon {
@@ -27,5 +27,20 @@ export interface Eon {
   start: number;
   end: number;
   eras: Era[];
-  description?: string[];
+  description: string[];
+}
+
+
+export interface PeriodContainer extends Period {
+  showEpochs: boolean;
+}
+
+export interface EraContainer extends Era {
+  showPeriods: boolean;
+  periodContainers: PeriodContainer[];
+}
+
+export interface EonContainer extends Eon {
+  showEras: boolean;
+  eraContainers: EraContainer[];
 }

@@ -1,1 +1,165 @@
+
+<div class="main-header">Geological Timeline of Earth</div>
+
+<!-- Eons -->
+<div 
+  *ngFor="let eon of eons"
+  class="division-block">
+
+  <!-- Eon Top Boundary -->
+  <div class="timeline-boundary">
+    <div class="timeline-boundary-line"></div>
+    <div class="timeline-boundary-value">
+      <span *ngIf="eon.end == 0">Present Time</span>
+      <span *ngIf="eon.end != 0">&#x2248; {{eon.end}} Million Years Ago</span>
+    </div>
+    <div class="timeline-boundary-line"></div>
+  </div>
+
+  <!-- Eon Body -->
+  <div class="division-body">
+
+    <!-- Eon Name -->
+    <div class="division-name">
+      <span>{{eon.name}} Eon</span>
+      <div *ngIf="eon.showEras" class="timeline-button" (click)="toggleEras(eon.name)">Hide Eras</div>
+    </div>
+
+    <!-- Eon Description -->
+    <div *ngIf="!eon.showEras" class="division-description">
+      <ul>
+        <li *ngFor="let text of eon.description">{{text}}</li>
+      </ul>
+    </div>
+
+    <!-- Eras -->
+    <div *ngIf="eon.eras && eon.showEras" class="divisions-container">
+
+      <div *ngFor="let era of eon.eraContainers" class="division-block">
+
+        <!-- Era Top Boundary -->
+        <div *ngIf="era != eon.eraContainers[0]" class="timeline-boundary">
+          <div class="timeline-boundary-line"></div>
+          <div class="timeline-boundary-value">
+            <span>&#x2248; {{era.end}} Million Years Ago</span>
+          </div>
+          <div class="timeline-boundary-line"></div>
+        </div>
+
+        <!-- Era Body -->
+        <div class="division-body">
+          <div class="division-name">
+            <span>{{era.name}} Era</span>
+            <div *ngIf="era.showPeriods" class="timeline-button" (click)="togglePeriods(eon.name, era.name)">Hide Periods</div>
+          </div>
+
+          <!-- Era Description -->
+          <div *ngIf="!era.showPeriods" class="division-description">
+            <ul>
+              <li *ngFor="let text of era.description">{{text}}</li>
+            </ul>
+          </div>
+
+          <!-- Periods -->
+          <div *ngIf="era.periods && era.showPeriods" class="divisions-container">
+
+            <div *ngFor="let period of era.periodContainers" class="division-block">
+
+              <!-- Period Top Boundary -->
+              <div *ngIf="period != era.periodContainers[0]" class="timeline-boundary">
+                <div class="timeline-boundary-line"></div>
+                <div class="timeline-boundary-value">
+                  <span>&#x2248; {{period.end}} Million Years Ago</span>
+                </div>
+                <div class="timeline-boundary-line"></div>
+              </div>
+
+              <!-- Period Body -->
+              <div class="division-body">
+
+                <div class="division-name">
+                  <span>{{period.name}} Period</span>
+                  <div *ngIf="period.showEpochs" class="timeline-button" (click)="toggleEpochs(eon.name, era.name, period.name)">Hide Epochs</div>
+                </div>
+
+                <!-- Period Description -->
+                <div *ngIf="!period.showEpochs" class="division-description">
+                  <ul>
+                    <li *ngFor="let text of period.description">{{text}}</li>
+                  </ul>
+                </div>
+
+                <!-- Epochs -->
+                <div *ngIf="period.epochs && period.showEpochs" class="divisions-container">
+
+                  <div *ngFor="let epoch of period.epochs" class="division-block">
+
+                    <!-- Epoch Top Boundary -->
+                    <div *ngIf="epoch != period.epochs[0]" class="timeline-boundary">
+                      <div class="timeline-boundary-line"></div>
+                      <div class="timeline-boundary-value">
+                        <span>&#x2248; {{epoch.end}} Million Years Ago</span>
+                      </div>
+                      <div class="timeline-boundary-line"></div>
+                    </div>
+
+                    <!-- Epoch Body -->
+                    <div class="division-body">
+
+                      <div class="division-name">{{epoch.name}} Epoch</div>
+
+                      <!-- Epoch Description -->
+                      <div class="division-description">
+                        <ul>
+                          <li *ngFor="let text of epoch.description">{{text}}</li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+                <!-- Epochs Button -->
+                <div *ngIf="period.epochs.length && !period.showEpochs" class="timeline-button-container">
+                  <div class="timeline-button" (click)="toggleEpochs(eon.name, era.name, period.name)">Explore...</div>
+                </div>
+
+              </div>
+
+            </div>
+            
+          </div>
+
+          <!-- Periods Button -->
+          <div *ngIf="era.periods.length && !era.showPeriods" class="timeline-button-container">
+            <div class="timeline-button" (click)="togglePeriods(eon.name, era.name)">Explore...</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Eras Button -->
+    <div *ngIf="eon.eras.length && !eon.showEras" class="timeline-button-container">
+      <div class="timeline-button" (click)="toggleEras(eon.name)">Explore...</div>
+    </div>
+
+  </div>
+  
+  <!-- Eon Bottom Boundary -->
+  <div *ngIf="eon === eons[eons.length - 1]" class="timeline-boundary">
+    <div class="timeline-boundary-line"></div>
+    <div class="timeline-boundary-value">
+      <span>&#x2248; {{eon.start}} Million Years Ago</span>
+    </div>
+    <div class="timeline-boundary-line"></div>
+  </div>
+
+</div>
+
+
 <router-outlet></router-outlet>

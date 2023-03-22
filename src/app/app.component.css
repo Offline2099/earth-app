@@ -1,0 +1,95 @@
+
+/* Header */
+
+.main-header {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+
+/* Divvisions (Eons, Eras, Periods, Epochs) */
+
+.divisions-container {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.division-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.division-body {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.division-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  width: 300px;
+}
+
+
+/* Boundaries */
+
+.timeline-boundary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-boundary-line {
+  display: flex;
+  flex: 1 1 100%;
+  border-top: 2px solid #222;
+}
+
+.timeline-boundary-value {
+  margin: 0 20px;
+  white-space: nowrap;
+}
+
+
+/* Buttons */
+
+.timeline-button-container {
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.timeline-button {
+  margin: 10px;
+  padding: 5px 10px;
+  background: #222;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+/* Descriptions */
+
+.division-description {
+  display: flex;
+  margin: 20px;
+  max-width: 800px;
+}
+
+.division-description li {
+  margin-bottom: 5px;
+}
+
+.division-description li:last-of-type {
+  margin-bottom: 0;
+}
