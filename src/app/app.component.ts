@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { EonContainer, EraContainer, PeriodContainer } from './data/interfaces'
-import { Timeline } from './data/timeline'
+import { Division, DivisionContainer } from './data/interfaces';
+import { Timeline } from './data/timeline';
 
 @Component({
   selector: 'app-root',
@@ -10,78 +10,27 @@ import { Timeline } from './data/timeline'
 })
 export class AppComponent implements OnInit {
 
-  timeline = Timeline.reverse();
-
-  eons: EonContainer[] = [];
+  eons: DivisionContainer[] = [];
 
   ngOnInit() {
-    this.constructEonContainers();
+    this.constructDivsisionContainers();
   }
 
-  constructEonContainers(): void {
-    this.eons = this.timeline.map(eon => ({
-        name: eon.name,
-        start: eon.start,
-        end: eon.end,
-        eras: eon.eras,
-        description: eon.description,
-        showEras: false,
-        eraContainers: eon.eras.reverse().map(era => ({
-          name: era.name,
-          start: era.start,
-          end: era.end,
-          periods: era.periods,
-          description: era.description,
-          showPeriods: false,
-          periodContainers: era.periods.reverse().map(period => ({
-            name: period.name,
-            start: period.start,
-            end: period.end,
-            epochs: period.epochs.reverse(),
-            description: period.description,
-            showEpochs: false
-          }))
-        }))
-    }))
+  constructDivsisionContainers(): void {
+    this.eons = Timeline.reverse().map(eon => this.constructContainer(eon));
   }
 
-  toggleEras(eonName: string): void {
-
-    let eon: EonContainer | undefined = 
-      this.eons.find(eon => eon.name == eonName);
-    if (eon === undefined) return;
-
-    eon.showEras = !eon.showEras;
+  constructContainer(d: Division): DivisionContainer {
+    return {
+      type: d.type,
+      name: d.name,
+      start: d.start,
+      end: d.end,
+      subdivisions: d.subdivisions,
+      description: d.description,
+      showSubdivisions: false,
+      subdivisionContainers: 
+        d.subdivisions.length ? d.subdivisions.reverse().map(s => this.constructContainer(s)) : []
+    }
   }
-
-  togglePeriods(eonName: string, eraName: string): void {
-
-    let eon: EonContainer | undefined = 
-      this.eons.find(eon => eon.name == eonName);
-    if (eon === undefined) return;
-
-    let era: EraContainer | undefined = 
-      eon.eraContainers.find(era => era.name == eraName);
-    if (era === undefined) return;
-
-    era.showPeriods = !era.showPeriods;
-  }
-
-  toggleEpochs(eonName: string, eraName: string, periodName: string): void {
-
-    let eon: EonContainer | undefined = 
-      this.eons.find(eon => eon.name == eonName);
-    if (eon === undefined) return;
-
-    let era: EraContainer | undefined = 
-      eon.eraContainers.find(era => era.name == eraName);
-    if (era === undefined) return;
-
-    let period: PeriodContainer | undefined = 
-      era.periodContainers.find(period => period.name == periodName);
-    if (period === undefined) return;
-
-    period.showEpochs = !period.showEpochs;
-  }
-
 }

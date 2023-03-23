@@ -1,46 +1,18 @@
 
-export interface Epoch {
+// Timeline Divisions (Eon, Era, Period, Epoch)
+
+export interface Division {
+  type: string;
   name: string;
   start: number;
   end: number;
   description: string[];
+  subdivisions: Division[];
 }
 
-export interface Period {
-  name: string;
-  start: number;
-  end: number;
-  epochs: Epoch[];
-  description: string[];
-}
+// Timeline Division Container State
 
-export interface Era {
-  name: string;
-  start: number;
-  end: number;
-  periods: Period[];
-  description: string[];
-}
-
-export interface Eon {
-  name: string;
-  start: number;
-  end: number;
-  eras: Era[];
-  description: string[];
-}
-
-
-export interface PeriodContainer extends Period {
-  showEpochs: boolean;
-}
-
-export interface EraContainer extends Era {
-  showPeriods: boolean;
-  periodContainers: PeriodContainer[];
-}
-
-export interface EonContainer extends Eon {
-  showEras: boolean;
-  eraContainers: EraContainer[];
+export interface DivisionContainer extends Division {
+  showSubdivisions: boolean;
+  subdivisionContainers: DivisionContainer[];
 }
