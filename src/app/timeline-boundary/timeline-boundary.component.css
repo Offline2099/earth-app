@@ -1,0 +1,19 @@
+/* Boundaries */
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-boundary-line {
+  display: flex;
+  flex: 1 1 100%;
+  border-top: 2px solid #222;
+}
+
+.timeline-boundary-value {
+  margin: 0 20px;
+  white-space: nowrap;
+  font-size: 18px;
+}

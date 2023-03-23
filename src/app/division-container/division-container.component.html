@@ -1,14 +1,8 @@
 <!-- Division Top Boundary -->
-<div 
+<app-timeline-boundary
   *ngIf="!(division.type != 'Eon' && division == containers[0])"
-  class="timeline-boundary">
-  <div class="timeline-boundary-line"></div>
-  <div class="timeline-boundary-value">
-    <span *ngIf="(reverse && division.end == 0) || (!reverse && division.start == 0)">Present Time</span>
-    <span *ngIf="(reverse && division.end != 0) || (!reverse && division.start != 0)">&#x2248; {{reverse ? division.end : division.start}} Million Years Ago</span>
-  </div>
-  <div class="timeline-boundary-line"></div>
-</div>
+  [value]="reverse ? division.end : division.start">
+</app-timeline-boundary>
 
 <!-- Division Body -->
 <div class="division-body">
@@ -55,13 +49,7 @@
 </div>
 
 <!-- Division Bottom Boundary -->
-<div 
-  *ngIf="division.type == 'Eon' && division == containers[containers.length - 1]" 
-  class="timeline-boundary">
-  <div class="timeline-boundary-line"></div>
-  <div class="timeline-boundary-value">
-    <span *ngIf="(reverse && division.start == 0) || (!reverse && division.end == 0)">Present Time</span>
-    <span *ngIf="(reverse && division.start != 0) || (!reverse && division.end != 0)">&#x2248; {{reverse ? division.start : division.end}} Million Years Ago</span>
-  </div>
-  <div class="timeline-boundary-line"></div>
-</div>
+<app-timeline-boundary
+  *ngIf="division.type == 'Eon' && division == containers[containers.length - 1]"
+  [value]="reverse ? division.start : division.end">
+</app-timeline-boundary>
