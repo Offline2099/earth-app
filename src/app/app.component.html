@@ -1,10 +1,27 @@
 
 <div class="main-header">Geological Timeline of Earth</div>
 
+<div class="main-intro">
+  <p>The history of our planet is much longer than the history of human civilization. Scientists study the layers of ice and rock, examine fossilized remains of extinct animals, and use various other complex methods to learn about the past. </p>
+  <p>The amount of data currently known about the Earth's history is enormous. We now understand that before us there have been dozens of periods and epochs, each with its own climate conditions, geograpic features, ecosystems and biodiversity.</p>
+  <p>Here you can see a brief summary of the Earth's geological history, learn about commonly recognized eras and periods, and what happened on our planet during those times.</p>
+</div>
+
+<div class="main-controls">
+  <span class="main-controls-label">Start from </span>
+  <div 
+    class="main-controls-button"
+    (click)="setReverse(true)">Present Time</div>
+  <div 
+    class="main-controls-button"
+    (click)="setReverse(false)">Formation of Earth</div>
+</div>
+
 <app-division-container
   *ngFor="let eon of eons"
   [containers]="eons"
-  [division]="eon">
+  [division]="eon"
+  [reverse]="reverse">
 </app-division-container>
 
 <router-outlet></router-outlet>

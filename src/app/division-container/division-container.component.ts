@@ -11,6 +11,7 @@ export class DivisionContainerComponent implements OnInit {
 
   @Input() containers!: DivisionContainer[];
   @Input() division!: DivisionContainer;
+  @Input() reverse: boolean = true;
 
   constructor() { }
 

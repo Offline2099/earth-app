@@ -11,6 +11,7 @@ import { Timeline } from './data/timeline';
 export class AppComponent implements OnInit {
 
   eons: DivisionContainer[] = [];
+  reverse = true;
 
   ngOnInit() {
     this.constructDivsisionContainers();
@@ -31,6 +32,13 @@ export class AppComponent implements OnInit {
       showSubdivisions: false,
       subdivisionContainers: 
         d.subdivisions.length ? d.subdivisions.reverse().map(s => this.constructContainer(s)) : []
+    }
+  }
+
+  setReverse(state: boolean): void {
+    if (this.reverse != state) {
+      this.reverse = state;
+      this.constructDivsisionContainers();
     }
   }
 }

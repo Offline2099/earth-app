@@ -8,3 +8,41 @@
   margin-bottom: 50px;
   font-size: 30px;
 }
+
+
+/* Intro */
+
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.main-intro p {
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+
+
+/* Controls */
+
+.main-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.main-controls-label {
+  font-size: 24px;
+}
+
+.main-controls-button {
+  display: inline-flex;
+  margin-left: 15px;
+  padding: 5px 10px;
+  background: #222;
+  font-size: 22px;
+  cursor: pointer;
+}

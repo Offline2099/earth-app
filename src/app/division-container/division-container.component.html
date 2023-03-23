@@ -4,8 +4,8 @@
   class="timeline-boundary">
   <div class="timeline-boundary-line"></div>
   <div class="timeline-boundary-value">
-    <span *ngIf="division.end == 0">Present Time</span>
-    <span *ngIf="division.end != 0">&#x2248; {{division.end}} Million Years Ago</span>
+    <span *ngIf="(reverse && division.end == 0) || (!reverse && division.start == 0)">Present Time</span>
+    <span *ngIf="(reverse && division.end != 0) || (!reverse && division.start != 0)">&#x2248; {{reverse ? division.end : division.start}} Million Years Ago</span>
   </div>
   <div class="timeline-boundary-line"></div>
 </div>
@@ -38,7 +38,8 @@
     <app-division-container
       *ngFor="let subdivision of division.subdivisionContainers"
       [containers]="division.subdivisionContainers"
-      [division]="subdivision">
+      [division]="subdivision"
+      [reverse]="reverse">
     </app-division-container>
   </div>
 
@@ -48,7 +49,7 @@
     class="timeline-button-container">
     <div 
       class="timeline-button" 
-      (click)="toggleSubdivisions(containers, division.name)">Explore...</div>
+      (click)="toggleSubdivisions(containers, division.name)">Explore<br />{{division.subdivisions[0].type}}s</div>
   </div>
 
 </div>
@@ -59,7 +60,8 @@
   class="timeline-boundary">
   <div class="timeline-boundary-line"></div>
   <div class="timeline-boundary-value">
-    <span>&#x2248; {{division.start}} Million Years Ago</span>
+    <span *ngIf="(reverse && division.start == 0) || (!reverse && division.end == 0)">Present Time</span>
+    <span *ngIf="(reverse && division.start != 0) || (!reverse && division.end != 0)">&#x2248; {{reverse ? division.start : division.end}} Million Years Ago</span>
   </div>
   <div class="timeline-boundary-line"></div>
 </div>
