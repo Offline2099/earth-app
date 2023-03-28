@@ -11,14 +11,14 @@ import { Timeline } from './data/timeline';
 export class AppComponent implements OnInit {
 
   eons: DivisionContainer[] = [];
-  reverse = true;
+  reverseState = false;
 
   ngOnInit() {
     this.constructDivsisionContainers();
   }
 
   constructDivsisionContainers(): void {
-    this.eons = Timeline.reverse().map(eon => this.constructContainer(eon));
+    this.eons = Timeline.map(eon => this.constructContainer(eon));
   }
 
   constructContainer(d: Division): DivisionContainer {
@@ -31,14 +31,20 @@ export class AppComponent implements OnInit {
       description: d.description,
       showSubdivisions: false,
       subdivisionContainers: 
-        d.subdivisions.length ? d.subdivisions.reverse().map(s => this.constructContainer(s)) : []
+        d.subdivisions.length ? d.subdivisions.map(s => this.constructContainer(s)) : []
     }
   }
 
-  setReverse(state: boolean): void {
-    if (this.reverse != state) {
-      this.reverse = state;
-      this.constructDivsisionContainers();
+  reverseDivsisionContainers(containers: DivisionContainer[]): void {
+    containers.reverse();
+    containers.forEach(container => this.reverseDivsisionContainers(container.subdivisionContainers));
+  }
+
+  setReverseState(state: boolean): void {
+    if (this.reverseState != state) {
+      this.reverseState = state;
+      this.reverseDivsisionContainers(this.eons);
     }
   }
+
 }

@@ -5,11 +5,15 @@
 </app-timeline-boundary>
 
 <!-- Division Body -->
-<div class="division-body">
+<div class="division-body background-{{division.name.toLowerCase()}}">
 
   <!-- Division Name -->
-  <div class="division-name">
-    <span>{{division.name}} {{division.type}}</span>
+  <div class="division-name-container">
+    <div class="division-name">{{division.name}} {{division.type}}</div>
+    <div class="division-duration">
+      <div>{{division.start}} - {{division.end}}</div>
+      <div>million years ago</div>
+    </div>
     <div 
       *ngIf="division.showSubdivisions" 
       class="timeline-button" 
@@ -27,8 +31,11 @@
 
   <!-- Subdivisions -->
   <div 
-    *ngIf="division.subdivisions.length && division.showSubdivisions"
-    class="divisions-container">
+    *ngIf="division.subdivisions.length"
+    class="subdivisions-container"
+    [ngClass]="{
+      'container-visible': division.showSubdivisions
+    }">
     <app-division-container
       *ngFor="let subdivision of division.subdivisionContainers"
       [containers]="division.subdivisionContainers"

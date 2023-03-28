@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-timeline-boundary',
   templateUrl: './timeline-boundary.component.html',
   styleUrls: ['./timeline-boundary.component.css']
 })
-export class TimelineBoundaryComponent implements OnInit {
+export class TimelineBoundaryComponent implements OnInit, OnChanges {
 
   @Input() value!: number;
 
@@ -14,7 +14,11 @@ export class TimelineBoundaryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.formBoundaryText()
+    this.formBoundaryText();
+  }
+
+  ngOnChanges(): void {
+    this.formBoundaryText();
   }
 
   formBoundaryText(): void {

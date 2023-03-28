@@ -1,54 +1,73 @@
 
-/* Timeline Divisions (Eons, Eras, Periods, Epochs) */
-
-.divisions-container {
-  display: flex;
-  flex: 1 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 :host {
   display: flex;
   flex-direction: column;
-
-  background: rgba(31, 31, 31, .3);
 }
 
 .division-body {
+  position: relative;
   display: flex;
   flex: 1 1;
   justify-content: center;
   align-items: center;
 }
 
-.division-name {
+.division-body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
+}
+
+.division-name-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 22px;
+  margin: 15px 0;
   width: 270px;
+  z-index: 1;
 }
 
+:host.subdivisions-displayed > .division-body > .division-name-container {
+  position: sticky;
+  top: 15px;
+  bottom: 15px;
+}
 
-/* Boundaries */
+.division-name {
+  margin-bottom: 10px;
+  font-size: 24px;
+  letter-spacing: .01em;
+  text-shadow: 1px 1px #111;
+}
 
-.timeline-boundary {
+.division-duration {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  color: #999;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.subdivisions-container {
+  display: none;
+  flex: 0 1;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 10px;
+  z-index: 1;
+  transition: .2s;
 }
 
-.timeline-boundary-line {
+.subdivisions-container.container-visible {
   display: flex;
-  flex: 1 1 100%;
-  border-top: 2px solid #222;
-}
-
-.timeline-boundary-value {
-  margin: 0 20px;
-  white-space: nowrap;
+  animation: fadeIn .5s;
 }
 
 
@@ -62,8 +81,10 @@
 
 .timeline-button {
   margin: 10px;
-  padding: 5px 10px;
-  background: #222;
+  padding: 3px 15px 5px 15px;
+  border-radius: 5px;
+  background: #282828;
+  text-align: center;
   font-size: 22px;
   cursor: pointer;
 }
@@ -74,13 +95,206 @@
 .division-description {
   display: flex;
   margin: 20px;
-  max-width: 700px;
+  width: 700px;
+  font-size: 16px;
+  letter-spacing: .005em;
+  z-index: 1;
+  animation: fadeIn .5s;
 }
 
 .division-description li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  padding-left: 4px;
+  transition: .3s;
 }
 
 .division-description li:last-of-type {
   margin-bottom: 0;
+}
+
+
+/* Colors */
+
+.background-hadean {
+  background: rgba(174, 2, 126, .15);
+}
+
+.background-archean {
+  background: rgba(240, 4, 127, .15);
+}
+
+.background-proterozoic {
+  background: rgba(247, 53, 99, .2);
+}
+
+.background-phanerozoic {
+  background: rgba(154, 217, 221, .15);
+}
+
+
+.background-eoarchean {
+  background: rgba(230, 29, 140, .2);
+}
+
+.background-paleoarchean {
+  background: rgba(246, 104, 178, .2);
+}
+
+.background-mesoarchean {
+  background: rgba(248, 129, 181, .2);
+}
+
+.background-neoarchean {
+  background: rgba(250, 167, 200, .2);
+}
+
+
+.background-paleoproterozoic {
+  background: rgba(247, 67, 112, .25);
+}
+
+.background-mesoproterozoic {
+  background: rgba(253, 180, 98, .25);
+}
+
+.background-neoproterozoic {
+  background: rgba(254, 179, 66, .28);
+}
+
+
+.background-siderian {
+  background: rgba(247, 79, 124, .28);
+}
+
+.background-rhyacian {
+  background: rgba(247, 91, 137, .3);
+}
+
+.background-orosirian {
+  background: rgba(247, 104, 152, .32);
+}
+
+.background-statherian {
+  background: rgba(248, 117, 167, .34);
+}
+
+
+.background-calymmian {
+  background: rgba(253, 192, 122, .28);
+}
+
+.background-ectasian {
+  background: rgba(253, 204, 138, .28);
+}
+
+.background-stenian {
+  background: rgba(254, 217, 154, .30);
+}
+
+
+.background-tonian {
+  background: rgba(254, 191, 78, .24);
+}
+
+.background-cryogenian {
+  background: rgba(254, 204, 92, .28);
+}
+
+.background-ediacaran {
+  background: rgba(254, 217, 106, .30);
+}
+
+
+.background-paleozoic {
+  background: rgba(153, 192, 141, .22);
+}
+
+.background-mesozoic {
+  background: rgba(103, 197, 202, .22);
+}
+
+.background-cenozoic {
+  background: rgba(242, 249, 29, .20);
+}
+
+
+.background-cambrian {
+  background: rgba(127, 160, 86, .25);
+}
+
+.background-ordovician {
+  background: rgba(0, 146, 112, .25);
+}
+
+.background-silurian {
+  background: rgba(179, 225, 182, .25);
+}
+
+.background-devonian {
+  background: rgba(203, 140, 55, .25);
+}
+
+.background-carboniferous {
+  background: rgba(103, 165, 153, .3);
+}
+
+.background-permian {
+  background: rgba(240, 64, 40, .25);
+}
+
+
+.background-triassic {
+  background: rgba(129, 43, 146, .25);
+}
+
+.background-jurassic {
+  background: rgba(52, 178, 201, .3);
+}
+
+.background-cretaceous {
+  background: rgba(127, 198, 78, .25);
+}
+
+
+.background-paleogene {
+  background: rgba(253, 154, 82, .25);
+}
+
+.background-neogene {
+  background: rgba(255, 230, 25, .28);
+}
+
+.background-quaternary {
+  background: rgba(249, 249, 127, .25);
+}
+
+
+.background-paleocene {
+  background: rgba(253, 167, 95, .28);
+}
+
+.background-eocene {
+  background: rgba(253, 180, 108, .3);
+}
+
+.background-oligocene {
+  background: rgba(253, 192, 122, .25);
+}
+
+
+.background-miocene {
+  background: rgba(255, 255, 0, .28);
+}
+
+.background-pliocene {
+  background: rgba(255, 255, 153, .28);
+}
+
+
+.background-pleistocene {
+  background: rgba(255, 242, 174, .28);
+}
+
+.background-holocene {
+  background: rgba(254, 242, 224, .25);
 }

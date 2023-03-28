@@ -4,13 +4,30 @@ body {
   flex: 1 1 100%;
   flex-direction: column;
   min-height: 100vh;
-  background: #000;
-  color: #aaa;
-  font-family: 'Segoe UI';
+  background: #080808;
+  color: #a8a8a8;
+  font-family: 'Open Sans', monospace;
   cursor: default;
+  animation: fadeIn 1s;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn1 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

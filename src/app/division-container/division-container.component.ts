@@ -5,7 +5,10 @@ import { DivisionContainer } from '../data/interfaces';
 @Component({
   selector: 'app-division-container',
   templateUrl: './division-container.component.html',
-  styleUrls: ['./division-container.component.css']
+  styleUrls: ['./division-container.component.css'],
+  host: {
+    '[class.subdivisions-displayed]': 'division.showSubdivisions'
+  }
 })
 export class DivisionContainerComponent implements OnInit {
 
