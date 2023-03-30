@@ -16,9 +16,14 @@ export class DivisionContainerComponent implements OnInit {
   @Input() division!: DivisionContainer;
   @Input() reverse: boolean = true;
 
+  dType: string = '';
+  dName: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+    this.dType = this.division.type.toLowerCase();
+    this.dName = this.division.name.toLowerCase();
   }
 
   toggleSubdivisions(containers: DivisionContainer[], divisionName: string): void {

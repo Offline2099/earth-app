@@ -7,7 +7,7 @@
   max-width: 1000px;
   padding: 20px 0;
   margin: 0 auto 50px auto;
-  border-bottom: 1px solid #222;
+  border-bottom: 2px dashed #222;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;

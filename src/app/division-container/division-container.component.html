@@ -5,19 +5,31 @@
 </app-timeline-boundary>
 
 <!-- Division Body -->
-<div class="division-body background-{{division.name.toLowerCase()}}">
+<div class="division-body type-{{dType}} background-{{dName}}">
 
   <!-- Division Name -->
   <div class="division-name-container">
     <div class="division-name">{{division.name}} {{division.type}}</div>
     <div class="division-duration">
-      <div>{{division.start}} - {{division.end}}</div>
-      <div>million years ago</div>
+      <div>
+        <span>{{division.start}}</span>
+        <span *ngIf="division.end > 0"> - {{division.end}}</span>
+        <span *ngIf="division.end == 0"> Million Years Ago - </span> 
+      </div>
+      <div>
+        <span *ngIf="division.end > 0">Million Years Ago</span>
+        <span *ngIf="division.end == 0">Present Time</span> 
+      </div>
     </div>
     <div 
       *ngIf="division.showSubdivisions" 
       class="timeline-button" 
       (click)="toggleSubdivisions(containers, division.name)">Hide {{division.subdivisions[0].type}}s</div>
+    <div 
+      *ngIf="division.image" 
+      class="division-image-container">
+      <img src="./assets/img/{{dType}}/{{dName}}.jpg">
+    </div>
   </div>
 
   <!-- Division Description -->
@@ -25,7 +37,7 @@
     *ngIf="!division.showSubdivisions"
     class="division-description">
     <ul>
-      <li *ngFor="let text of division.description">{{text}}</li>
+      <li *ngFor="let text of division.description" [innerHTML]="text"></li>
     </ul>
   </div>
 

@@ -208,6 +208,7 @@ const Ediacaran: Division = {
   name: 'Ediacaran',
   start: 635,
   end: 538,
+  image: true,
   subdivisions: [],
   description: [
     'A new super-continent, Pannotia, formed between 600 and 540 million years ago.',
@@ -223,6 +224,7 @@ const Cambrian: Division = {
   name: 'Cambrian',
   start: 538,
   end: 485,
+  image: true,
   subdivisions: [],
   description: [
     'Supercontinent Pannotia breaks apart, forming warm shallow seas and tidal flats.',
@@ -239,6 +241,7 @@ const Ordovician: Division = {
   name: 'Ordovician',
   start: 485,
   end: 444,
+  image: true,
   subdivisions: [],
   description: [
     'The warming trend of the climate is reversing, and the planet is gradually cooling. In the late Ordovician, polar ice caps are forming once again.',
@@ -254,6 +257,7 @@ const Silurian: Division = {
   name: 'Silurian',
   start: 444,
   end: 419,
+  image: true,
   subdivisions: [],
   description: [
     'Polar ice caps melt once again, and the climate becomes warmer. Oxygen levels in the atmosphere are close to 19%.',
@@ -268,6 +272,7 @@ const Devonian: Division = {
   name: 'Devonian',
   start: 419,
   end: 359,
+  image: true,
   subdivisions: [],
   description: [
     'The continent of Gondwana is located entirely within the Southern Hemisphere. The continent of Laurussia is fully formed northwest of Gondwana.',
@@ -285,6 +290,7 @@ const Carboniferous: Division = {
   name: 'Carboniferous',
   start: 359,
   end: 299,
+  image: true,
   subdivisions: [],
   description: [
     'Gondwana collides with Laurussia, forming the supercontinent Pangaea.',
@@ -301,6 +307,7 @@ const Permian: Division = {
   name: 'Permian',
   start: 299,
   end: 252,
+  image: true,
   subdivisions: [],
   description: [
     'All major landmasses are collected into a single supercontinent Pangaea, experiencing continental climate with extreme variations of heat and cold. Deserts cover a large portion of the land.',
@@ -316,6 +323,7 @@ const Triassic: Division = {
   name: 'Triassic',
   start: 252,
   end: 201,
+  image: true,
   subdivisions: [],
   description: [
     'The supercontinent of Pangaea begins to gradually rift into two separate landmasses, Laurasia to the north and Gondwana to the south.',
@@ -330,6 +338,7 @@ const Jurassic: Division = {
   name: 'Jurassic',
   start: 201,
   end: 145,
+  image: true,
   subdivisions: [],
   description: [
     'The climate is warm, with no ice caps. Forests grow in the polar regions, with large arid expanses in the lower latitudes. Oxygen levels remain stable near 20%.',
@@ -343,6 +352,7 @@ const Cretaceous: Division = {
   name: 'Cretaceous',
   start: 145,
   end: 66,
+  image: true,
   subdivisions: [],
   description: [
     'Pangea is finally split into separate continents. The climate remains warm, keeping sea levels high. Shallow inland seas spread along extensive new coastlines.',
@@ -530,6 +540,7 @@ const Hadean: Division = {
   start: 4567,
   end: 4000,
   subdivisions: [],
+  image: true,
   description: [
     'The beginning of the Hadean Eon is defined by the age of the oldest known solid material in the Solar System.',
     'The Earth formes about 4.54 billion years ago from an accretion disk, a cloud of gas and dust left over from the formation of the Sun.',
@@ -547,6 +558,7 @@ const Archean: Division = {
   name: 'Archean',
   start: 4000,
   end: 2500,
+  image: true,
   subdivisions: [Eoarchean, Paleoarchean, Mesoarchean, Neoarchean],
   description: [
     'The Earth\'s magnetic field finally forms, around 3.5 billion years ago. This protects the planet from solar wind and stabillizes the atmosphere.',
@@ -562,6 +574,7 @@ const Proterozoic: Division = {
   name: 'Proterozoic',
   start: 2500,
   end: 538,
+  image: true,
   subdivisions: [Paleoproterozoic, Mesoproterozoic, Neoproterozoic],
   description: [
     'The movement of tectonic plates continues. Kenorland breaks apart roughly 2.1 billion years ago. New super-continents keep forming and breaking up: Nuna (Columbia) exists between 1.8 and 1.5 billion years ago, Rodinia exists between 1.2 billion and 700 million years ago. The fifth super-continent, Pannotia, finally formes roughly 540 million years ago.',

@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
       end: d.end,
       subdivisions: d.subdivisions,
       description: d.description,
+      image: d.image,
       showSubdivisions: false,
       subdivisionContainers: 
         d.subdivisions.length ? d.subdivisions.map(s => this.constructContainer(s)) : []

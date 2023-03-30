@@ -6,6 +6,7 @@ export interface Division {
   name: string;
   start: number;
   end: number;
+  image?: boolean;
   description: string[];
   subdivisions: Division[];
 }
