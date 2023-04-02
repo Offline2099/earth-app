@@ -86,10 +86,11 @@ const Siderian: Division = {
   end: 2300,
   subdivisions: [],
   description: [
-    'Photosynthetic bacteria continue to produce huge amounts of oxygen. It reacts with iron in the oceans, forming insoluble magnetite and hematite. Those minerals deposit on the ocean floor, creating layers of banded iron formations. The oceans stop being green and take a modern look.',
-    'With no remaining iron in the oceans to serve as an absorber, oxygen quickly builds up in the atmosphere. This is often referred to as the Great Oxidation Event that started roughly 2.44 billion years ago.',
-    'As a result of the rapid increase in oxygen concentration and decrease in methane concentration, many species of anaerobic bacteria (which uses methane and to which oxygen is toxic) go extinct.',
-    'About 2.4 billion years ago, methane\'s fraction of the atmosphere gets reduced to very low levels. This causes a significant drop in surface temperatures, known as the Huronian glaciation. Several ice ages occur, during which almost the entire surface of the Earth is covered with ice.'
+    'The continent of <b>Ur</b> breaks apart roughly 2.4 billion years ago.',
+    'Photosynthetic bacteria continue producing huge amounts of oxygen. It reacts with iron in the oceans, forming insoluble magnetite and hematite. Those minerals deposit on the ocean floor, creating layers of <b>banded iron formations</b>. The oceans cease to be green and get a modern look.',
+    'With no remaining iron in the oceans to serve as an absorber, oxygen quickly builds up in the atmosphere. This is known as the <b>Great Oxidation Event</b>, dating back to about 2.44 billion years ago.',
+    'As a result of rapidly increasing oxygen levels and decreasing methane concentrations, many species of <b>anaerobic</b> microorganisms (which use methane and to which oxygen is toxic) go extinct.',
+    'About 2.4 billion years ago, the fraction of methane in the atmosphere decreases to trace levels. This causes a significant drop in surface temperatures, known as the <b>Huronian glaciation</b>. Several ice ages occur, during which almost the entire surface of the Earth is covered with ice.'
   ]
 }
 
@@ -100,11 +101,10 @@ const Rhyacian: Division = {
   end: 2050,
   subdivisions: [],
   description: [
-    'The Huronian glaciation lasts throughout most of this period, until about 2.1 billion years ago.',
-    'Intense volcanic eruptions occur around the planet, producing large quantities of carbon dioxide and other greenhouse gases. This increases the temperatures and finally ends the glaciation.',
-    'Roughly 2.1 billion years ago, the super-continent Kenorland breaks apart due to the motion of tectonic plates.',
-    'Cyanobacteria survive the glaciation and still dominate areas near coastlines and in marine waters.',
-    'First eukaryotic organisms appear. Such organisms have a nucleus in their cells, unlike all previously existing prokaryotic life forms.'
+    'Roughly 2.1 billion years ago, the supercontinent of <b>Kenorland</b> breaks apart.',
+    'The <b>Huronian glaciation</b> lasts throughout most of this period, until about 2.1 billion years ago. Intense volcanic eruptions occur around the planet, producing large quantities of carbon dioxide and other greenhouse gases. This increases the temperatures and finally ends the glaciation.',
+    '<b>Cyanobacteria</b> survive the glaciation and still dominate coastal areas and marine waters.',
+    'First <b>eukaryotic</b> organisms possibly appear. Such organisms have a nucleus in their cells, unlike all previously existing <b>prokaryotic</b> life forms.'
   ]
 }
 
@@ -115,10 +115,10 @@ const Orosirian: Division = {
   end: 1800,
   subdivisions: [],
   description: [
-    'Intence motion of tectonic plates produces multiple mountain ranges around the planet.',
-    'Two large asteroid impacts occur: 2.023 billion years ago (produced a crater 300 km wide) and 1.85 billion years ago (produced a crater 250 km wide). These events, however, did not have significant long-term consequences.',
-    'Prokaryotic cyanobacteria organisms continue to be the predominant life forms.',
-    'A new super-continent, Nuna (also known as Columbia), is formed roughly 1.8 billion years ago, near the end of the period.'
+    'Intense motion of tectonic plates produces multiple mountain ranges around the planet.',
+    'A new supercontinent, <b>Columbia</b> (also known as <b>Nuna</b>), is formed roughly 1.8 billion years ago, near the end of the period.',
+    'Two large asteroid impacts occur: 2.023 billion years ago (produced a crater 300 km wide) and 1.85 billion years ago (produced a crater 250 km wide). These events, however, have no significant long-term consequences.',
+    '<b>Prokaryotic</b> microorganisms, such as <b>cyanobacteria</b>, remain the predominant form of life.'    
   ]
 }
 
@@ -129,10 +129,10 @@ const Statherian: Division = {
   end: 1600,
   subdivisions: [],
   description: [
-    'The super-continent Nuna (Columbia) further increases in size, new continental platforms are forming.',
-    'Oxygen levels in the atmosphere become relatively stable, remaining between 10% and 20% of current values.',
-    'Unicellular organisms keep evolving and diversifying, both on land and in the oceans.',
-    'The so-called Boring Billion starts, a time interval between 1.8 and 0.8 billion years ago, characterized by tectonic and climatic stability.'
+    'The supercontinent of <b>Columbia</b> (<b>Nuna</b>) further increases in size. New continental platforms and mountain ranges are forming.',
+    'Oxygen levels in the atmosphere become relatively stable, remaining between 10% and 20% of modern values.',
+    'The so-called <b>Boring Billion</b> begins, a time interval between 1.8 and 0.8 billion years ago, characterized by biospheric and climatic stability.',
+    'Unicellular microorganisms keep evolving and diversifying both on land and in the oceans.'    
   ]
 }
 
@@ -143,9 +143,9 @@ const Calymmian: Division = {
   end: 1400,
   subdivisions: [],
   description: [
-    'The super-continent Nuna (Columbia) starts breaking up around 1.5 billion years ago. Shallow seas appear between landmasses.',
-    'The atmospheric composition and climate remain stable, without significant fluctuations.',
-    'Microorganisms become structurally more complex. First confirmed fossils of eukaryotic organisms belong to this period.'
+    'The supercontinent of <b>Columbia</b> (<b>Nuna</b>) begins to break up around 1.5 billion years ago. Shallow seas appear between landmasses.',
+    'The so-called <b>Boring Billion</b> continues. The atmospheric composition and climate remain stable, without significant fluctuations.',
+    'Microorganisms gradually evolve and become structurally more complex. The oldest known fossils of possibly <b>eukaryotic</b> species belong to this period.'
   ]
 }
 
@@ -156,9 +156,10 @@ const Ectasian: Division = {
   end: 1200,
   subdivisions: [],
   description: [
-    'Continents continue to drift and grow in size. The Earth\'s crust thickens due to the deposition of rock on top of older rock.',
-    'First confirmed multicellular organisms (predecessors of red and green algae) appear.',
-    'First organisms using sexual reproduction possibly appear, about 1.2 billion years ago.'
+    'The supercontinent of <b>Columbia</b> (<b>Nuna</b>) breaks up completely about 1.35 billion years ago. Continents continue to drift apart and grow in size. The Earth\'s crust thickens due to the deposition of rock on top of older rock.',
+    'The so-called <b>Boring Billion</b> continues. The atmospheric composition and climate remain stable, without significant fluctuations.',
+    'First confirmed <b>multicellular</b> organisms (predecessors of red and green algae) appear in the fossil record. This is also the oldest direct evidence of <b>eukaryotic</b> organisms.',
+    'First microorganisms using <b>sexual reproduction</b> possibly appear, about 1.2 billion years ago.'
   ]
 }
 
@@ -169,9 +170,11 @@ const Stenian: Division = {
   end: 1000,
   subdivisions: [],
   description: [
-    'A new super-continent, Rodinia, forms about 1.2 billion years ago. It is the largest landmass that had existed up to that time, with an extensive floodplain in the center.',
-    'The first sexually reproducing organism confirmed by fossils, a red alga Bangiomorpha pubescens, appears around 1.05 billion years ago.',
-    'New forms of life, such as fungi and mold, possibly appear near the end of this period.'
+    'A new supercontinent, <b>Rodinia</b>, forms about 1.13 billion years ago. It is the largest landmass in existence up to that time, with an extensive floodplain in the center.',
+    'The so-called <b>Boring Billion</b> continues. The atmospheric composition and climate remain stable, without significant fluctuations. The concentration of oxygen in the atmosphere slightly increases.',
+    'The first <b>sexually reproducing</b> organism confirmed by fossils, a species of red alga, appears around 1.05 billion years ago.',
+    '<b>Stromatolites</b>, layered rock formations created by microorganisms, reach maximum diversity in sediments of this period.',
+    '<b>Fungi</b> in the form of slime molds possibly develop towards the end of this period.'
   ]
 }
 
@@ -180,12 +183,13 @@ const Tonian: Division = {
   name: 'Tonian',
   start: 1000,
   end: 720,
+  image: true,
   subdivisions: [],
   description: [
-    'Rifts appear on the super-continent Rodinia, starting to break it apart around 850 million years ago.',
-    'Multiple species of filamentous and seaweed-like green algae thrive on the seafloor in shallow waters.',
-    'First fungi confirmed by fossil records appear about 890 million years ago. Sponges appear, confirmed in the fossils around 760 million years old.',
-    'First worm-like animals appear, reaching up to several centimeters in size, confirmed by fossils 840-740 million years old.'
+    'Rifts appear across the supercontinent of <b>Rodinia</b>, starting to break it apart roughly 750 million years ago and creating new shallow seas.',
+    'Multiple species of filamentous and seaweed-like <b>green algae</b> become widespread and thrive on the seafloor in shallow waters.',
+    '<b>Sponges</b> appear in the oceans, found in fossils about 760 million years old. First confirmed species of <b>fungi</b> appear about 890 million years ago.',
+    'First worm-like marine animals evolve, reaching up to several centimeters in size, confirmed by fossils 840-740 million years old.'
   ]
 }
 
@@ -194,12 +198,14 @@ const Cryogenian: Division = {
   name: 'Cryogenian',
   start: 720,
   end: 635,
+  image: true,
   subdivisions: [],
   description: [
-    'The super-continent Rodinia finally breaks up about 700 million years ago. Landmasses clustered around the south pole.',
-    'Two most severe glaciations in the Earth\'s history occur: Sturtian (750-700 million years ago) and Marinoan (650-635 million years ago). Glaciers extended and contracted in a series of rhythmic pulses, possibly reaching as far as the equator. Such state of the climate is often referred to as Snowball Earth. The exact causes of the glaciations are still disputed.',
-    'Testate amoebae, the first heterotrophic eukaryotes, appear. Such organisms cannot produce its own food, taking nutrition from plant or animal matter created by other species.',
-    'Heterotrophic plankton feeding on unicellular algae and prokaryotes possibly develops, ending the dominance of bacteria in the oceans.'
+    'The supercontinent of <b>Rodinia</b> finally breaks up about 700 million years ago. Landmasses become clustered around the South Pole.',
+    'The two most severe glaciations in the Earth\'s history occur: <b>Sturtian</b> (750-700 million years ago) and <b>Marinoan</b> (650-635 million years ago). Glaciers extend and contract in a series of rhythmic pulses, possibly reaching as far as the equator. Such state of the climate is often called the <b>Snowball Earth</b>. What exactly caused the glaciations is still unclear.',
+    'Life retreats into the oceans, unable to survive harsh conditions on land. However, the evolution of marine species continues.',
+    'First <b>heterotrophic</b> organisms, such as testate amoebae, appear. Such organisms cannot produce their own food, taking nutrition from organic matter created by other species.',
+    'Heterotrophic <b>plankton</b> possibly develops. It feeds on unicellular algae and prokaryotes, ending the dominance of bacteria in the oceans.'
   ]
 }
 
@@ -211,11 +217,11 @@ const Ediacaran: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'A new super-continent, Pannotia, formed between 600 and 540 million years ago.',
-    'The climate remains unstable early in the period and until the Gaskiers glaciation that occurs around 579 million years ago, followed by warm and humid climate during the second part of the period. Another cooling event, the Baykonurian glaciation, starts about 547 million years ago.',
-    'Diverse multicellular forms of life evolve in the oceans, including new species of fungi, algae, sponges, sea fans, jellyfish, and other organisms.',
-    'Complex ecological communities are forming, with species becoming more specialized and engaging in more inter-species interactions.',
-    'Most of the Ediacaran fauna did not survive into later periods. It is still disputed whether this was caused by a mass extinction due to a temporary decrease in oxygen levels, or whether the species were naturally replaced by more complex organisms.'
+    'A new supercontinent, <b>Pannotia</b>, formes around 630 million years ago.',
+    'The climate remains unstable early in the period. The <b>Gaskiers glaciation</b> occurs about 579 million years ago. It is followed by warm and humid climate during the second half of the Ediacaran. Another cooling event, the <b>Baykonurian glaciation</b>, starts about 547 million years ago.',
+    'A variety of multicellular life forms evolve in the oceans, including new species of <b>fungi</b>, <b>algae</b>, <b>sponges</b>, <b>sea fans</b>, <b>jellyfish</b>, and other macroscopic organisms.',
+    'Complex <b>ecosystems</b> are forming, with species becoming more specialized and engaging in more inter-species interactions.',
+    'Most of the Ediacaran fauna does not survive into later periods. It is still disputed whether this was caused by a mass extinction event or the species were naturally replaced by more adaptable organisms.'
   ]
 }
 
@@ -399,9 +405,9 @@ const Eoarchean: Division = {
   end: 3600,
   subdivisions: [],
   description: [
-    'Starts with a heavy asteroid and comet bombardment that presumably occured between 4.1 and 3.8 billion years ago.',
-    'The planet has cooled to mild temperatures. The atmosphere remains thick (with a surface pressure exceeding 10 modern atmospheres) and has an orange color due to high concentrations of methane, ammonia, and carbon dioxide.',
-    'The planet\'s surface is covered mostly with water, with volcanoes and volcanic islands present. Oceans are green and acidic from dissolved iron compounds.',
+    'Starts with a large number of asteroid and comet impacts that presumably occur between 4.1 and 3.8 billion years ago, known as the <b>Late Heavy Bombardment</b>.',
+    'The atmosphere has cooled to milder temperatures, although remains thick (with a surface pressure exceeding 10 modern atmospheres) and has an orange color due to high concentrations of methane, ammonia, and carbon dioxide.',
+    'The planet\'s surface is mostly covered by water, with volcanoes and volcanic islands present. Oceans are green and acidic from dissolved iron compounds.',
     'Early microbial life possibly appears, utilizing methane as the primary source of energy.'
   ]
 }
@@ -413,10 +419,10 @@ const Paleoarchean: Division = {
   end: 3200,
   subdivisions: [],
   description: [
-    'The Earth\'s magnetic field finally establishes around 3.5 billion years ago, preventing the planet\'s atmosphere from being stripped away by the solar wind.',
-    'Continent formation begins, with increasingly larger land masses emerging from the oceans and forming Vaalbara, the first super-continent.',
+    'The Earth\'s <b>magnetic field</b> finally establishes around 3.5 billion years ago, preventing the planet\'s atmosphere from getting stripped away by the solar wind.',
+    'Continent formation begins, with increasingly larger land masses emerging from the oceans and forming <b>Vaalbara</b>, the first supercontinent.',
     'The earliest confirmed microbial life appears, evidenced from microfossils of organisms found in rocks 3.465 billion years old.',
-    'First forms of cyanobacteria capable of using photosynthesis, a process that converts the energy of light into chemical energy, possibly appear.'
+    'First forms of <b>cyanobacteria</b> capable of using <b>photosynthesis</b>, a process that converts the energy of light into chemical energy, possibly appear.'
   ]
 }
 
@@ -427,11 +433,10 @@ const Mesoarchean: Division = {
   end: 2800,
   subdivisions: [],
   description: [
-    'The movement of tectonic plates begins. The first super-continent, Vaalbara, breaks up. A new continent, Ur, emerges.',
-    'Surface temperatures further decrease and remain around 55-85 °C during most of the era.',
-    'More diverse microbial life develops, producing large amounts of oxygen. However, the atmosphere is still comprised mostly of methane and carbon dioxide,  as the oxygen continues to be used up in oxidizing minerals.',
-    'First microbial life forms on land possibly appear, around 3 billion years ago.',
-    'The oldest known glaciation event, Pongola glaciation, occures around 2.9 billion years ago. Polar glaciers extend up to 48 degrees of latitude.'
+    'The movement of tectonic plates begins. The first supercontinent, <b>Vaalbara</b>, breaks apart. A new continent, <b>Ur</b>, emerges.',
+    'Surface temperatures further decrease and remain around 55-85 °C during most of the era. The atmosphere still has high levels of methane and carbon dioxide. The oxygen produced by bacteria quickly becomes bound as it reacts with minerals in the environment.',
+    'More diverse microbial life develops. First microorganisms on land possibly appear, around 3 billion years ago.',
+    'The oldest known glaciation event, the <b>Pongola glaciation</b>, occurs around 2.9 billion years ago. Polar glaciers extend up to 48 degrees of latitude.'
   ]
 }
 
@@ -442,10 +447,10 @@ const Neoarchean: Division = {
   end: 2500,
   subdivisions: [],
   description: [
-    'The movement of tectonic plates continues. A new super-continent, Kenorland, is formed about 2.7 billion years ago.',
+    'The movement of tectonic plates continues. A new supercontinent, <b>Kenorland</b>, formes about 2.7 billion years ago.',
     'Oceans are still green, with increased sulfur and molybdenum levels, and methane still prevails in the atmospheric composition.',
-    'Multiple forms of bacteria capable of oxygen-forming photosynthesis evolve, contributing to the rise of oxygen concentration in the atmosphere.',
-    'Microorganisms evolve on land (confirmed in 2.75 billion years old fossils), breaking down rock and forming first soils.'
+    'Multiple species of bacteria capable of oxygen-forming <b>photosynthesis</b> evolve, contributing to the rise of oxygen concentration in the atmosphere.',
+    'Microorganisms spread on land, confirmed in 2.75 billion year old fossils. They start breaking down rock and forming first soils.'
   ]
 }
 
@@ -454,13 +459,14 @@ const Paleoproterozoic: Division = {
   name: 'Paleoproterozoic',
   start: 2500,
   end: 1600,
+  image: true,
   subdivisions: [Siderian, Rhyacian, Orosirian, Statherian],
   description: [
-    'Photosynthetic microorganisms keep producing more oxygen. It reacts with minerals dissolved in the water, depositing them on the ocean floor and making the water look clear. The concentration of oxygen in the atmosphere keeps growing, causing mass extinction of anaerobic bacteria for which oxygen is toxic. This is often referred to as the Great Oxidation Event.',
-    'Decreased concentrations of methane and carbon dioxide in the atmosphere cause surface temperatures to drop. The Huronian glaciation lasts from about 2.4 to 2.1 billion years ago. It includes multiple ice ages, and almost the entire surface of the Earth gets covered with ice. Intense volcanism eventually produces enough greenhouse gases to end the glaciation.',
-    'The super-continent Kenorland breaks apart roughly 2.1 billion years ago. Tectonic plates continue to move, creating a new super-continent Nuna (Columbia) about 1.8 billion years ago. Multiple mountain ranges and continental platforms are forming.',
-    'First possible eukaryotic organisms appear, as early as about 2.1 billion years ago. Such organisms have a nucleus in their cells, unlike all previously existing prokaryotic life forms.',
-    'Prokaryotic unicellular organisms continue to be the predominant form of life, evolving and diversifying.'
+    'The supercontinent of <b>Kenorland</b> breaks apart roughly 2.1 billion years ago. Tectonic plates keep moving, creating a new supercontinent, <b>Columbia</b> (also known as <b>Nuna</b>), about 1.8 billion years ago. Multiple mountain ranges and continental platforms are forming.',
+    'Photosynthetic microorganisms keep producing oxygen. It reacts with minerals dissolved in the water, depositing them on the ocean floor and making the water look clear. It also accumulates in the atmosphere, causing a mass extinction of anaerobic organisms for which oxygen is toxic. This is known as the <b>Great Oxidation Event</b>.',
+    'Decreased atmospheric concentrations of methane and carbon dioxide lead to lower surface temperatures. The <b>Huronian glaciation</b> lasts from about 2.4 to 2.1 billion years ago. It includes multiple ice ages, with glaciers possibly covering the entire surface of the Earth. Intense volcanism eventually produces enough greenhouse gases to end the glaciation.',
+    'First possible <b>eukaryotic</b> microorganisms appear, as early as about 2.1 billion years ago. Such organisms have a nucleus in their cells, unlike all previously existing <b>prokaryotic</b> species.',
+    '<b>Prokaryotic</b> unicellular organisms still remain the predominant form of life, evolving and diversifying.'
   ]
 }
 
@@ -469,12 +475,14 @@ const Mesoproterozoic: Division = {
   name: 'Mesoproterozoic',
   start: 1600,
   end: 1000,
+  image: true,
   subdivisions: [Calymmian, Ectasian, Stenian],
   description: [
-    'The super-continent Nuna (Columbia) breaks apart around 1.5 billion years ago. Tectonic plates keep moving, leading to the formation of a new super-continent, Rodinia, about 1.2 billion years ago. The Earth\'s crust thickens, land masses grow in size.',
-    'The atmospheric composition and climate remain stable, without significant fluctuations. No glaciations occur during this era.',
-    'Microorganisms become structurally more complex. First multicellular organisms appear around 1.2 billion years ago.',
-    'First confirmed organisms using sexual reproducion appear around 1.05 billion years ago. New forms of life, such as fungi and mold, possibly emerge by the end of this era.'
+    'The supercontinent of <b>Columbia</b> (<b>Nuna</b>) breaks apart between 1.5 and 1.35 billion years ago. Tectonic plates keep moving, leading to the formation of a new supercontinent, <b>Rodinia</b>, about 1.13 billion years ago. The Earth\'s crust thickens, land masses grow in size.',
+    'The so-called <b>Boring Billion</b> continues. The atmospheric composition and climate remain stable, without significant fluctuations. No glaciations occur during this era.',
+    'Microorganisms become structurally more complex. First confirmed <b>eukaryotic</b> species (which have a nucleus in their cells) appear in the fossil record. First <b>multicellular</b> organisms appear around 1.2 billion years ago, or possibly earlier.',
+    'First confirmed organisms using <b>sexual reproduction</b> appear, at least 1.05 billion years ago.',
+    'New forms of life, such as <b>fungi</b> in the shape of mold, possibly emerge by the end of this era.'
   ]
 }
 
@@ -483,12 +491,15 @@ const Neoproterozoic: Division = {
   name: 'Neoproterozoic',
   start: 1000,
   end: 538,
+  image: true,
   subdivisions: [Tonian, Cryogenian, Ediacaran],
   description: [
-    'The super-continent Rodinia breaks up between 850 and 700 million years ago. A new super-continent, Pannotia, formes between 600 and 540 million years ago.',
-    'Several glaciations occur, including the two most severe in the Earth\'s history: Sturtian (750-700 million years ago) and Marinoan (650-635 million years ago). Glaciers extend all the way to the equator, which is often referred to as Snowball Earth.',
-    'Multiple new forms of life evolve, including fungi, algae, sponges, and other organisms.',
-    'Complex ecosystems are forming, with species becoming more specialized. First heterotrophic eukaryotes appear.'
+    'The supercontinent of <b>Rodinia</b> breaks up between 750 and 700 million years ago. A new supercontinent, <b>Pannotia</b>, formes about 630 million years ago.',
+    'The <b>Boring Billion</b> finally ends. The two most severe glaciations in the Earth\'s history occur: <b>Sturtian</b> (750-700 million years ago) and <b>Marinoan</b> (650-635 million years ago). Glaciers extend all the way to the equator, which is often referred to as the <b>Snowball Earth</b>.',
+    'Temperatures rise and remain warm towards the end of the era, yet two more glaciations happen: <b>Gaskiers</b> (579 million years ago) and <b>Baykonurian</b> (547 million years ago).',
+    'Life keeps evolving in the oceans. New multicellular organisms appear, including some <b>fungi</b>, filamentous <b>green algae</b>, <b>sponges</b>, worm-like marine animals, <b>jellyfish</b>, and diverse <b>Ediacaran fauna</b>.',
+    'First <b>heterotrophic</b> species appear. Such organisms cannot produce their own food, consuming organic matter created by other species. <b>Plankton</b> feeds on unicellular algae and prokaryotes, ending the dominance of bacteria in the oceans.',
+    'Complex marine <b>ecosystems</b> are forming, with species becoming more specialized.'
   ]
 }
 
@@ -542,13 +553,13 @@ const Hadean: Division = {
   subdivisions: [],
   image: true,
   description: [
-    'The beginning of the Hadean Eon is defined by the age of the oldest known solid material in the Solar System.',
-    'The Earth formes about 4.54 billion years ago from an accretion disk, a cloud of gas and dust left over from the formation of the Sun.',
-    'The Moon formes tens of millions of years after the Earth\'s formation. According to the impact hypothesis, a large stellar body struck the Earth with a glancing blow, causing a portion of its material to be ejected into orbit and forming the Moon.',
-    'Initially, the Earth was molten due to frequent collisions with other bodies. Later, the outer layer of the planet cools down and forms a solid crust. Gases form the atmosphere, and water condenses on the surface.',
+    'The beginning of the Hadean Eon is defined by the age of the oldest known solid material in the Solar System, found in meteorites and measured at 4.567 billion years old.',
+    'The <b>Earth</b> formes about 4.54 billion years ago from an <b>accretion disk</b>, a cloud of gas and dust left over from the formation of the Sun.',
+    'The <b>Moon</b> formes tens of millions of years after the Earth\'s formation. According to the <b>impact hypothesis</b>, a large stellar body struck the Earth with a glancing blow, causing a portion of its material to be ejected into orbit and forming the Moon.',
+    'Initially, the Earth is molten due to frequent collisions with asteroids and other such objects. Later, the outer layer of the planet cools down and forms a solid crust. Gases form the atmosphere, and water condenses on the rocky surface.',
     'The initial heavy atmosphere consists mostly of carbon dioxide, has a surface temperature exceeding 200 °C and an atmospheric pressure of above 25 modern atmospheres.',
-    'Most of the planet\'s surface is covered by oceans. Water remains liquid at temperatures above 100 °C due to high pressure. Continents or islands may exist, but occupy a fairly small area.',
-    'Between 4.1 and 3.8 billion years ago, numerous asteroid impacts occur, causing significant changes to the surface environment. This event is usually referred to as Late Heavy Bombardment.',
+    'In the late Hadean, most of the planet\'s surface is covered by oceans. Water remains liquid at temperatures above 100 °C due to the high atmospheric pressure. Continents or islands may exist, but occupy a fairly small area.',
+    'Between 4.1 and 3.8 billion years ago, numerous asteroid impacts occur, causing significant changes to the surface environment. This event is usually referred to as the <b>Late Heavy Bombardment</b>.',
     'Since very little evidence has survived from the Hadean Eon, geophysical models remain controversial and may change with new discoveries.'
   ]
 }
@@ -561,11 +572,12 @@ const Archean: Division = {
   image: true,
   subdivisions: [Eoarchean, Paleoarchean, Mesoarchean, Neoarchean],
   description: [
-    'The Earth\'s magnetic field finally forms, around 3.5 billion years ago. This protects the planet from solar wind and stabillizes the atmosphere.',
-    'The movement of tectonic plates begins. The first super-continent, Vaalbara, forms 3.6 billion years ago and breaks up 2.8 billion years ago. The continent of Ur forms, around 3 billion years ago. The second super-continent, Kenorland, forms 2.7 billion years ago.',
-    'The planet is cooled down to relatively mild temperatures below 100 °C. The atmosphere is orange, it consists primarily of methane and carbon dioxide. The oceans are green and acidic due to dissolved minerals.',
-    'Microbial life appears in the oceans and spreads to the continents. Cyanobacteria use photosynthesis to convert the energy of light into chemical energy, producing large amounts of oxygen. Microorganisms break down rock, creating soils.',
-    'Pongola glaciation, the oldest known glaciation event, occures near the end of the eon (about 2.9 billion years ago).'
+    'The Earth\'s <b>magnetic field</b> finally forms, around 3.5 billion years ago. It protects the planet from the solar wind and stabilizes the atmosphere.',
+    'The movement of tectonic plates begins. The first supercontinent, <b>Vaalbara</b>, emerges 3.6 billion years ago and breaks up 2.8 billion years ago. The continent of <b>Ur</b> forms, around 2.8 billion years ago. The second supercontinent, <b>Kenorland</b>, forms 2.7 billion years ago.',
+    'The planet is cooled to milder surface temperatures of about 55-85 °C. The atmosphere is orange, with high concentrations of methane and carbon dioxide. The oceans are green and acidic due to dissolved minerals.',
+    'Microbial life appears in the oceans, as early as 3.77 billion years ago, and eventually spreads to the continents. Microorganisms break down rock, creating soils.',
+    '<b>Cyanobacteria</b> evolve to use <b>photosynthesis</b> to convert the energy of sunlight into chemical energy, producing large amounts of oxygen. However, most of the oxygen quickly becomes bound as it reacts with minerals in the environment.',
+    'The <b>Pongola glaciation</b>, the oldest known glaciation event, occurs closer the end of the eon, about 2.9 billion years ago.'
   ]
 }
 
@@ -577,12 +589,12 @@ const Proterozoic: Division = {
   image: true,
   subdivisions: [Paleoproterozoic, Mesoproterozoic, Neoproterozoic],
   description: [
-    'The movement of tectonic plates continues. Kenorland breaks apart roughly 2.1 billion years ago. New super-continents keep forming and breaking up: Nuna (Columbia) exists between 1.8 and 1.5 billion years ago, Rodinia exists between 1.2 billion and 700 million years ago. The fifth super-continent, Pannotia, finally formes roughly 540 million years ago.',
-    'Microorganisms keep producing oxygen. It reacts with minerals dissolved in the oceans, making the water more clear. It also builds up in the atmosphere, causing mass extinction of anaerobic bacteria for which oxygen is toxic. This is often referred to as the Great Oxidation Event (about 2.4 billion years ago).',
-    'Decreased concentrations of greenhouse gases trigger the Huronian glaciation (2.4 to 2.1 billion years ago). Climate stabilizes 1.8 billion years ago and remains roughly the same for a billion years (so-called Boring Billion). Severe glaciations occur between 750 and 635 million years ago, with glaciers reaching the equator (Snowball Earth). Warm and humid climate establishes again near the end of the eon.',
-    'Unicellular organisms, such as cyanobacteria, continue to be the predominant form of life during most of the eon, evolving and diversifying.',
-    'Eukaryotic organisms (have a nucleus in their cells) appear, possibly around 2.1 billion years ago. First multicellular organisms develop around 1.2 billion years ago. Sexual reproducion emerges, first confirmed around 1.05 billion years ago.',
-    'Heterotrophic organisms (cannot produce their own food, rely on the existence of other species for survival) appear and become widespread. Near the end of the eon, complex ecosystems start forming in the oceans.'
+    'The movement of tectonic plates continues. <b>Kenorland</b> breaks apart roughly 2.1 billion years ago. New supercontinents keep forming and breaking up: <b>Columbia</b> (<b>Nuna</b>) exists between 1.8 and 1.35 billion years ago, <b>Rodinia</b> exists between 1.13 and 0.7 billion years ago. The fifth supercontinent, <b>Pannotia</b>, formes about 630 million years ago.',
+    'Microorganisms keep producing oxygen. It reacts with minerals dissolved in the oceans, turning the water clear. It also builds up in the atmosphere, causing a mass extinction of <b>anaerobic</b> organisms for which oxygen is toxic. This is known as the <b>Great Oxidation Event</b> (2.4 to 2.0 billion years ago).',
+    'Decreased concentrations of greenhouse gases trigger the <b>Huronian glaciation</b> (2.4 to 2.1 billion years ago). The climate stabilizes 1.8 billion years ago and remains almost unchanged for a billion years (so-called <b>Boring Billion</b>). Severe glaciations occur between 750 and 635 million years ago, with glaciers reaching the equator (<b>Snowball Earth</b>). Warm and humid climate establishes again near the end of the eon.',
+    'Unicellular <b>prokaryotic</b> organisms, such as cyanobacteria, continue to be the predominant form of life during most of the eon, evolving and diversifying.',
+    '<b>Eukaryotic</b> organisms (have a nucleus in their cells) appear, possibly around 2.1 billion years ago. First <b>multicellular</b> organisms develop about 1.2 billion years ago. <b>Sexual reproduction</b> emerges, first confirmed around 1.05 billion years ago.',
+    '<b>Heterotrophic</b> organisms (cannot produce their own food, rely on the existence of other species) appear and become widespread. Complex <b>ecosystems</b> are forming in the oceans near the end of the eon.'
   ]
 }
 
