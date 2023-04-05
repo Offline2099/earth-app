@@ -19,7 +19,12 @@ const Paleocene: Division = {
   start: 66,
   end: 56,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    'The continents of the Northern Hemisphere are still connected via land bridges. South America, Antarctica, and Australia are also not completely separated yet.',
+    'The climate is warm, without permanent ice sheets near the poles. Global average temperatures are about 24–25 °C.',
+    'Continents are covered with dense forests, populated mainly by small creatures. Mammals rapidly diversify and fill the ecological niches vacated by the Cretaceous-Paleogene extinction. The earliest placental and marsupial mammals appear.',
+    'The end of the epoch is marked by the Paleocene–Eocene Thermal Maximum, a major climatic event in which a massive amount of carbon is released into the atmosphere, causing a spike in global temperatures.'
+  ]
 }
 
 const Eocene: Division = {
@@ -28,7 +33,12 @@ const Eocene: Division = {
   start: 56,
   end: 34,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    'Continents continue to drift towards their modern positions. Australia splits from Antarctica around 45 million years ago.',
+    'The climate keeps warming until it reaches the Eocene Optimum at around 49 million years ago, then begins to coool down. Sea level reaches up to 150 m higher than modern levels.',
+    'Many groups of modern mammals appear, though most animals still remain small (under 10 kg). New groups of birds evolve. Plants and marine fauna also becomes quite modern.',
+    'The epoch ends with the Eocene–Oligocene extinction event (also known as Grande Coupure), affecting mostly marine and aquatic species.'
+  ]
 }
 
 const Oligocene: Division = {
@@ -37,7 +47,13 @@ const Oligocene: Division = {
   start: 34,
   end: 23,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    'The sea which used to separate <b>Europe</b> from <b>Asia</b> disappears, a persistent land connection between the two continents establishes. The passage between <b>South America</b> and <b>Antarctica</b> possibly appears. Modern mountain ranges (such as the <b>Alps</b> and the <b>Andes</b>) are rising.',
+    'A rapid cooling occures about 33.5 million years ago. An ice sheet forms in Antarctica, it keeps growing and covers the entire continent. Sea levels drop by 105 meters. The climate remains cold until about 25 million years ago, when it temporarily gets warmer.',
+    'Tropical and subtropical forests recede, getting replaced by temperate forests. Open plains and deserts became more common. Grasses and flowering plants expand their reach.',
+    'The cooling climate, together with the opening and closing of land bridges, leads to a reorganization of the land fauna. Modern groups of <b>mammals</b> (such as horses, rhinoceroses, camels, deer, dogs, bears, weasels, raccoons) diversify and replace previously dominant groups, such as creodonts. Largest land mammals that ever existed, such as Paraceratherium, appear in Eurasia.',
+    'Many species of marine snails and clams go extinct due to the cooling, and the overall diversity of marine life diminishes. However, some new species of whales and sharks evolve.'
+  ]
 }
 
 const Miocene: Division = {
@@ -217,7 +233,7 @@ const Ediacaran: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'A new supercontinent, <b>Pannotia</b>, formes around 630 million years ago.',
+    'A new supercontinent, <b>Pannotia</b>, forms around 630 million years ago and breaks up 570 million years ago. The landmass of <b>Gondwana</b> forms 550 million years ago.',
     'The climate remains unstable early in the period. The <b>Gaskiers glaciation</b> occurs about 579 million years ago. It is followed by warm and humid climate during the second half of the Ediacaran. Another cooling event, the <b>Baykonurian glaciation</b>, starts about 547 million years ago.',
     'A variety of multicellular life forms evolve in the oceans, including new species of <b>fungi</b>, <b>algae</b>, <b>sponges</b>, <b>sea fans</b>, <b>jellyfish</b>, and other macroscopic organisms.',
     'Complex <b>ecosystems</b> are forming, with species becoming more specialized and engaging in more inter-species interactions.',
@@ -233,12 +249,12 @@ const Cambrian: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'Supercontinent Pannotia breaks apart, forming warm shallow seas and tidal flats.',
-    'Polar ice caps melt in early Cambrian, and the climate continues to warm. The atmosphere remains relatively stable, with around 16% of oxygen and 4200-6000 ppm of carbon dioxide.',
-    'The diversity of oceanic life rapidly increases. Complex multicellular organisms (such as arthropods, trilobites, mollusсs, first vertebrates, burrowing animals) become widespread. First coral reefs possibly appear. This is often referred to as Cambrian Explosion.',
-    'Life forms on land remain mostly limited to microbial ecosystems, possibly with algae and lichens present. First freshwater ecosystems are forming.',
-    'Two extinction events occur: End-Botomian (517 million years ago) and Dresbachian (502 million years ago). Each of the events affected about 40% to 50% of marine species. The causes are still disputed.',
-    'About 488 million years ago, Cambrian–Ordovician extinction event eliminates many brachiopods and severely reduces the number of trilobite species.'
+    'The remnants of <b>Pannotia</b> (the continents of <b>Laurentia</b>, <b>Baltica</b>, and <b>Siberia</b>) continue to drift apart, forming warm shallow seas and tidal flats.',
+    'Polar ice caps melt in the early Cambrian, and the climate keeps warming. The atmospheric composition remains relatively stable, with about 16% of oxygen and 4200-6000 ppm of carbon dioxide.',
+    'The diversity of oceanic life vastly increases. Complex multicellular organisms (such as <b>arthropods</b>, <b>trilobites</b>, <b>molluscs</b>, first <b>vertebrates</b>, <b>burrowing animals</b>) appear and become widespread. First <b>coral reefs</b> possibly form. This rapid burst of biospheric development is known as the <b>Cambrian Explosion</b>.',
+    'Life forms on land remain mostly limited to microbial ecosystems, possibly with <b>algae</b> and <b>lichens</b> present. First freshwater ecosystems are forming.',
+    'Two extinction events occur: <b>End-Botomian</b> (517 million years ago) and <b>Dresbachian</b> (502 million years ago). Each of the events affects about 40-50% of marine species. The causes are still disputed.',
+    'About 488 million years ago, the <b>Cambrian–Ordovician extinction event</b> eliminates many species of <b>brachiopods</b> and severely reduces the number of <b>trilobites</b>.'
   ]
 }
 
@@ -250,11 +266,11 @@ const Ordovician: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'The warming trend of the climate is reversing, and the planet is gradually cooling. In the late Ordovician, polar ice caps are forming once again.',
-    'Oceanic life continues to flourish, with molluscs and arthropods being the predominant forms. It considerably expands during the Great Ordovician Biodiversification Event, with multiple species of fish evolving.',
-    'First confirmed plants and spores appear on land. Some fungi reach the size of 15 centimeters. First insects appear.',
-    'The Ordovician meteor event occurs about 467 million years ago, with a brief dramatic increase in the rate at which meteorites fell to Earth. Causes of the event are disputed.',
-    'The Late Ordovician mass extinction occurs roughly 443 million years ago. It eliminates nearly 85% of marine species, becoming the second-largest known extinction event in the Earth\'s history.'
+    'The warming trend of the climate reverses, and the planet is gradually cooling. Polar ice caps are forming once again. The <b>Late Ordovician glaciation</b> happens near the end of the period.',
+    'Oceanic life continues to flourish, with <b>molluscs</b> and <b>arthropods</b> being the predominant groups. It considerably expands during the <b>Great Ordovician Biodiversification Event</b>, with multiple species of <b>fish</b> evolving.',
+    'First confirmed <b>plants</b> that use <b>spores</b> for reproduction appear on land. Some fungi reach the size of 15 centimeters. First <b>insects</b> appear.',
+    'The <b>Ordovician meteor event</b> occurs about 467 million years ago, with a brief dramatic increase in the rate at which meteorites fall to Earth. Causes of the event are unclear.',
+    'The <b>Late Ordovician mass extinction</b> occurs roughly 443 million years ago. It eliminates nearly 85% of marine species, becoming the second-largest known extinction event in the Earth\'s history.'
   ]
 }
 
@@ -266,10 +282,11 @@ const Silurian: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'Polar ice caps melt once again, and the climate becomes warmer. Oxygen levels in the atmosphere are close to 19%.',
-    'Marine life recovers from the Late Ordovician mass extinction. Multiple species of jawed fish and bony fish appear in the oceans.',
-    'First vascular plants (which have specialized tissues for conducting water and minerals) evolve from more primitive land plants. Multiple new species of land fungi emerge.',
-    'First animals appear on land. Three groups of arthropods become fully terrestrialized: myriapods, arachnids, and hexapods.'
+    '<b>Gondwana</b> covers a large portion of the Southern Hemisphere. Smaller landmasses (<b>Laurentia</b>, <b>Baltica</b>, <b>Siberia</b>, and <b>Avalonia</b>) drift together near the equator. A large ocean occupies most of the Northern Hemisphere. ',
+    'The climate becomes warmer, polar ice caps retreat. However, the temperatures undergo significant short-term fluctuations. Oxygen levels in the atmosphere slightly increase and remain close to 19%.',
+    'Marine life recovers from the <b>Late Ordovician mass extinction</b>. Multiple species of <b>jawed fish</b> and <b>bony fish</b> appear in the oceans. Sea scorpions reach several meters in length.',
+    'First <b>vascular plants</b> (which have specialized tissues for conducting water and minerals) evolve from more primitive land plants. Multiple new species of land fungi emerge.',
+    'First <b>terrestrial animals</b> (living exclusively on land) appear. Three groups of <b>arthropods</b> become fully terrestrialized: <b>myriapods</b> (centipede-like animals), <b>arachnids</b> (spider-like animals), and <b>hexapods</b> (six-legged animals).'
   ]
 }
 
@@ -281,13 +298,13 @@ const Devonian: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'The continent of Gondwana is located entirely within the Southern Hemisphere. The continent of Laurussia is fully formed northwest of Gondwana.',
-    'The climate is relatively warm and arid, cooling towards the middle of the period and warming again towards its end. Average surface temperature of the oceans remains close to 30 °C. Oxygen levels the atmosphere increase from 20% to 27%.',
-    'Fish reaches substantial diversity and dominates aquatic environment (Age of Fishes). Trilobites remain common, first ammonites appear.',
-    'Several groups of land plants evolve leaves and roots. First trees and ferns appear. Plants spread across continents, forming extensive forests.',
-    'Arthropods (such as myriapods, arachnids, and hexapods) become well-established on land. First tetrapods (four-legged animals) appear in the fossil record.',
-    'The Late Devonian extinction, a series of extinction events between 375 and 372 million years ago, singificantly affects marine life, killing off many species of placoderms and trilobites.',
-    'Another mass extinction, the Hangenberg event, occurs 359 million years ago, mostly affecting aquatic animals.'
+    '<b>Gondwana</b> remains the largest landmass, located entirely within the Southern Hemisphere. The continent of <b>Laurussia</b> (also known as <b>Euramerica</b>) forms northwest of Gondwana through the collision of <b>Laurentia</b> and <b>Baltica</b>.',
+    'The climate is relatively warm and arid, cooling towards the middle of the period and warming again towards its end. Average surface temperatures of the ocean remain close to 30 °C. Oxygen levels in the atmosphere increase from 20% to 27%.',
+    '<b>Fish</b> reaches substantial diversity and dominates aquatic environments. <b>Trilobites</b> and <b>crinoids</b> remain common, first <b>ammonites</b> appear.',
+    'Several groups of land plants evolve to grow leaves and roots. First <b>trees</b> and <b>ferns</b> appear. Plants spread rapidly across continents, forming extensive forests. This is sometimes referred to as the <b>Devonian Explosion</b>.',
+    'First <b>tetrapods</b> (the ancestors of four-legged animals) appear in the fossil record. They begin adapting to walk on land, as their strong fins gradually evolve into legs.',
+    'The <b>Late Devonian extinction</b>, a series of extinction events between 375 and 372 million years ago, significantly impacts marine life, killing off many species of animals living in warm shallow waters.',
+    'Another mass extinction, the <b>Hangenberg event</b>, occurs 359 million years ago, mostly affecting aquatic life and coral reefs.'
   ]
 }
 
@@ -299,12 +316,12 @@ const Carboniferous: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'Gondwana collides with Laurussia, forming the supercontinent Pangaea.',
-    'Trees keep consuming carbon dioxide and producing oxygen. This increases the atmospheric oxygen levels to 31% and drops the carbon dioxide levels roughly 8 times, leading to gradual cooling of the planet.',
+    '<b>Gondwana</b> collides with <b>Laurussia</b> (<b>Euramerica</b>), forming the supercontinent of <b>Pangaea</b> about 336 million years ago.',
+    'The climate is warm early in the period. Trees keep consuming carbon dioxide and producing oxygen. This increases the atmospheric oxygen levels to 35% and drops the carbon dioxide levels roughly 8 times, causing gradual cooling of the planet.',
     'Tropical swamps and rainforests cover large parts of the continents. Fallen trees pile up, leading to the formation of coal.',
-    'Tetrapods (four-legged vertebrates) significantly diversify, with the appearance of lizard-like, snake-like, and crocodile-like animals. Amphibians and reptiles become widespread on land. Winged insects appear, with some species reaching dozens of centimeters in size.',
-    'Marine life continues to evolve, with a wide variety of sharks appearing. Freshwater fish also becomes abundant.',
-    'Around 305 million years ago, decreased global temperatures cause significant changes in terrestrial ecosystems and the extinction of some pecies. This event is known as Carboniferous Rainforest Collapse.'
+    '<b>Tetrapods</b> (four-legged vertebrates) significantly diversify, with the appearance of lizard-like, snake-like, and crocodile-like animals. <b>Amphibians</b> and <b>reptiles</b> become widespread. <b>Winged insects</b> appear, with some species reaching 70 cm in size.',
+    '<b>Invertebrates</b> continue to thrive in the oceans, heavily represented in the fossil record. A wide variety of <b>sharks</b> appear. <b>Freshwater fish</b> also becomes abundant.',
+    'Around 305 million years ago, decreased global temperatures cause significant changes in terrestrial ecosystems. This event is known as <b>Carboniferous Rainforest Collapse</b>.'
   ]
 }
 
@@ -316,11 +333,11 @@ const Permian: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'All major landmasses are collected into a single supercontinent Pangaea, experiencing continental climate with extreme variations of heat and cold. Deserts cover a large portion of the land.',
-    'Global temperatures remain relatively low near the beginning of the period, with polar ice caps present. A significant warming occurs 287 million years ago, known as Artinskian Warming Event, and 260 million years ago following the eruption of the Emeishan Traps. The climate becomes warm and dry.',
-    'Marine life experiences rather little changes compared to previous periods. Amphibians become less common on land, replaced synapsids (mammal-like reptiles), including therapsids (ancestors and relatives of modern mammals). Multiple new insects appear.',
-    'Two extinction events occur: Olson\'s Extinction (273 million years ago) and the Capitanian mass extinction (262-259 million years ago). Although some ecosystems are significantly impacted, the biodiversity quickly recovers.',
-    'The Permian-Triassic extinction event (Great Dying) occurs 252 million years ago, becoming the largest mass extinction in Earth\'s history. It eliminates nearly 81% of marine species and 70% of terrestrial species. Possible causes include the eruption of Siberian Traps, an asteroid impact, or a combination of factors. '
+    'All major landmasses are collected into a single supercontinent of <b>Pangaea</b> that spans from the equator to the poles. It experiences continental climate with extreme variations of heat and cold. Deserts cover large areas.',
+    'Global temperatures remain relatively low near the beginning of the period, with polar ice caps present. Two major warmings occur: the <b>Artinskian Warming Event</b> (287 million years ago), and the <b>Emeishan Thermal Excursion</b> (260 million years ago). The climate becomes warm and dry.',
+    '<b>Amphibians</b> become less common, replaced by <b>synapsids</b> (mammal-like reptiles), including <b>therapsids</b> (ancestors and relatives of modern mammals). Multiple new species of insects appear. Marine life experiences rather little changes compared to previous periods.',
+    'Two extinction events occur: <b>Olson\'s Extinction</b> (273 million years ago) and the <b>Capitanian mass extinction</b> (262-259 million years ago). Although some ecosystems are significantly impacted, the biodiversity quickly recovers.',
+    'The <b>Permian-Triassic extinction event</b> (also known as <b>Great Dying</b>) occurs 252 million years ago and becomes the largest mass extinction in Earth\'s history. It eliminates up to 95% of marine species and 70% of all land organisms. Possible causes include the eruption of Siberian Traps, an asteroid impact, or a combination of factors. '
   ]
 }
 
@@ -332,10 +349,12 @@ const Triassic: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'The supercontinent of Pangaea begins to gradually rift into two separate landmasses, Laurasia to the north and Gondwana to the south.',
-    'The climate is hot and dry in the beginning of the period and shifts to more humid folling the beeakup of Pangaea. Oxygen levels keep decreasing, from 26% to 20%.',
-    'Biodiversity recovers from the Permian-Triassic extinction, the process takes 10 to 30 million years. Reptiles dominate on land. First dinosaurs, first flying animals (pterosaurs), and first true mammals appear.',
-    'The period ends with another mass extinction, the Triassic–Jurassic extinction event 201 million years ago. It eliminates near 25-30% of marine life and multiple groups of land animals.'
+    'The supercontinent of <b>Pangaea</b> remains intact, drifting slowly northward.',
+    'The climate is generally hot and dry, with deserts near the equator and temperate forests in the polar regions. Oxygen levels are continually decreasing, reaching 20%.',
+    'Biodiversity is recovering from the <b>Permian-Triassic mass extinction</b>. The process takes 10 to 30 million years.',
+    '<b>Sharks</b> dominate freshwater and marine environments. <b>Ray-finned fishes</b> rapidly diversify. Ancestors of modern amphibians, such as frogs, appear.',
+    '<b>Reptiles</b> dominate on land. First <b>dinosaurs</b> appear between 245 and 233 million years ago. <b>Pterosaurs</b> (flying reptiles, first flying vertebrates) evolve about 228 million years ago. First true <b>mammals</b> appear and replace previously common mammal-like reptiles.',
+    'The period ends with another mass extinction, the <b>Triassic-Jurassic extinction event</b> 201 million years ago. It eliminates nearly 25-30% of marine life (severely affecting invertebrates and marine reptiles) and multiple groups of land animals.'
   ]
 }
 
@@ -347,9 +366,13 @@ const Jurassic: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'The climate is warm, with no ice caps. Forests grow in the polar regions, with large arid expanses in the lower latitudes. Oxygen levels remain stable near 20%.',
-    'Conifers and ferns remain most common groups of land plants. Dinosaurs diversify and take the ecological niches vacated by the Triassic–Jurassic extinction. First birds appear, evolving from pterosaurs.',
-    'The Toarcian Oceanic Anoxic Event occurs about 183 million years ago. Decreased oxygen levels in the oceans lead to the extinction of some marine invertebrates, yet has rather minor effects on marine reptiles.'
+    'Rifts appear on the supercontinent of <b>Pangaea</b>, splitting it into two separate landmasses: <b>Laurasia</b> in the north and <b>Gondwana</b> in the south.',
+    'The climate remains warm, with no ice caps on the poles. Several brief cooling intervals occur. Forests grow in the polar regions, large arid expanses are common in lower latitudes. Oxygen levels remain stable near 20%.',
+    '<b>Conifers</b> and <b>ferns</b> remain the most common groups of land plants. Ginkgo-like trees are also widespread.',
+    '<b>Dinosaurs</b> diversify and fill the ecological niches vacated by the <b>Triassic-Jurassic extinction</b>, establishing as the predominant group of land animals. Some species reach over 30 meters in size, becoming the largest known terrestrial animals.',
+    'Ancestors of birds appear, evolving from theropods (a group of dinosaur species). Ancestors of crocodiles make the transition from terrestrial to aquatic life.',
+    'Large <b>marine reptiles</b>, scuh as ichthyosaurs and plesiosaurs, become common. <b>Turtles</b> significantly diversify.',
+    'The <b>Toarcian Oceanic Anoxic Event</b> occurs about 183 million years ago. Reduced oxygen levels in the oceans cause the extinction of some marine invertebrates, although have rather little effect on reptiles.'
   ]
 }
 
@@ -361,10 +384,12 @@ const Cretaceous: Division = {
   image: true,
   subdivisions: [],
   description: [
-    'Pangea is finally split into separate continents. The climate remains warm, keeping sea levels high. Shallow inland seas spread along extensive new coastlines.',
-    'Dinosaurs continue to dominate on land. New groups of mammals and birds appear.',
-    'Flowering plants appear and began to rapidly diversify, becoming the dominant group of plants across the Earth by the end of the period.',
-    'The Cretaceous-Paleogene extinction event occurs 66 million years ago, caused by the impact of a massive asteroid 10-15 km wide. It wipes out all non-avian dinosaus, most other tetrapods (four-legged vertebrates) and large marine reptiles.'
+    '<b>Gondwana</b> splits into several pieces that would later become the modern continents: <b>Africa</b> separates from the connected landmasses of <b>South America</b>, <b>Antarctica</b>, and <b>Australia</b>. <b>Laurasia</b> still remains largely intact in the Northern Hemisphere.',
+    'The climate undergoes three major phases: warm and dry early in the period, warm and wet 125 to 85 million years ago, cool and dry near the end of the period.',
+    '<b>Flowering plants</b> (angiosperms) appear. They rapidly spread and diversify, becoming the dominant group of terrestrial plants by the end of the period.',
+    '<b>Dinosaurs</b> continue to dominate on land. New groups of small-sized <b>mammals</b> and <b>birds</b> emerge. Some modern <b>insects</b> (ants, termites, moths, grasshoppers) appear.',
+    'Large marine reptiles, turtles, sharks, ammonites, starfish, rays, and other aquatic animals continue to thrive in the oceans.',    
+    'The <b>Cretaceous-Paleogene extinction event</b> occurs 66 million years ago, caused by the impact of a massive asteroid 10-15 km wide. It wipes out all non-avian dinosaus, most other tetrapods (four-legged vertebrates) and large marine animals.'
   ]
 }
 
@@ -447,7 +472,7 @@ const Neoarchean: Division = {
   end: 2500,
   subdivisions: [],
   description: [
-    'The movement of tectonic plates continues. A new supercontinent, <b>Kenorland</b>, formes about 2.7 billion years ago.',
+    'The movement of tectonic plates continues. A new supercontinent, <b>Kenorland</b>, forms about 2.7 billion years ago.',
     'Oceans are still green, with increased sulfur and molybdenum levels, and methane still prevails in the atmospheric composition.',
     'Multiple species of bacteria capable of oxygen-forming <b>photosynthesis</b> evolve, contributing to the rise of oxygen concentration in the atmosphere.',
     'Microorganisms spread on land, confirmed in 2.75 billion year old fossils. They start breaking down rock and forming first soils.'
@@ -494,7 +519,7 @@ const Neoproterozoic: Division = {
   image: true,
   subdivisions: [Tonian, Cryogenian, Ediacaran],
   description: [
-    'The supercontinent of <b>Rodinia</b> breaks up between 750 and 700 million years ago. A new supercontinent, <b>Pannotia</b>, formes about 630 million years ago.',
+    'The supercontinent of <b>Rodinia</b> breaks up 750-700 million years ago. A new supercontinent, <b>Pannotia</b>, exists between 630 and 570 million years ago. <b>Gondwana</b> forms 550 million years ago.',
     'The <b>Boring Billion</b> finally ends. The two most severe glaciations in the Earth\'s history occur: <b>Sturtian</b> (750-700 million years ago) and <b>Marinoan</b> (650-635 million years ago). Glaciers extend all the way to the equator, which is often referred to as the <b>Snowball Earth</b>.',
     'Temperatures rise and remain warm towards the end of the era, yet two more glaciations happen: <b>Gaskiers</b> (579 million years ago) and <b>Baykonurian</b> (547 million years ago).',
     'Life keeps evolving in the oceans. New multicellular organisms appear, including some <b>fungi</b>, filamentous <b>green algae</b>, <b>sponges</b>, worm-like marine animals, <b>jellyfish</b>, and diverse <b>Ediacaran fauna</b>.',
@@ -508,13 +533,14 @@ const Paleozoic: Division = {
   name: 'Paleozoic',
   start: 538,
   end: 252,
+  image: true,
   subdivisions: [Cambrian, Ordovician, Silurian, Devonian, Carboniferous, Permian],
   description: [
-    'The supercontinent of Pannotia breaks apart. Continents keep drifting, forming Gondwana 510 million years ago, which later becomes a part of the new supercontinent Pangaea.',
-    'Climatic trends vary significantly throughout the era. Oxygen levels increase and reach its historical maximum of nearly 32%.',
-    'The biosphere experiences dramatic evolutionary changes. Arthropods, molluscs, fish, amphibians, reptiles, and multiple other groups of animals appear. Animals diversify rapidly in the oceans (Cambrian Explosion) and then eventually occupy the landmasses.',
-    'Plants appear on land and gradually evolve, forming extensive forests and tropical swamps, providing more comfortable habitats for animals.',
-    'The era ends with the Permian-Triassic mass extinction, the largest one in the Earth\'s history. It eliminates nearly 81% of marine species and 70% of terrestrial species.'
+    'The continents of <b>Laurentia</b> and <b>Baltica</b>, left over from the breakup of <b>Pannotia</b>, collide again to form <b>Laurussia</b> (also known as <b>Euramerica</b>), which in turn collides with <b>Gondwana</b>, assembling the new supercontinent of <b>Pangaea</b> about 336 million years ago.',
+    'The climate varies significantly throughout the era, alternating between warming and cooling trends. Oxygen levels keep increasing and reach the historical maximum of about 35%.',
+    'The biosphere experiences dramatic evolutionary changes. Animals diversify rapidly in the oceans (<b>Cambrian Explosion</b>) and then eventually occupy the landmasses. <b>Arthropods</b>, <b>trilobites</b>, <b>molluscs</b>, <b>fish</b>, <b>insects</b>, <b>amphibians</b>, <b>reptiles</b>, <b>tetrapods</b>, and multiple other groups of animals appear and become widespread.',
+    '<b>Plants</b> appear on land and gradually evolve, forming extensive forests (<b>Devonian Explosion</b>) and providing more comfortable habitats for animals.',
+    'Several extinction events occur. The era ends with the <b>Permian-Triassic mass extinction</b>, the largest one in Earth\'s history. It eliminates nearly 95% of marine life and 70% of terrestrial species.'
   ]
 }
 
@@ -523,13 +549,17 @@ const Mesozoic: Division = {
   name: 'Mesozoic',
   start: 252,
   end: 66,
+  image: true,
   subdivisions: [Triassic, Jurassic, Cretaceous],
   description: [
-    'The supercontinent Pangaea breaks up, splitting into several continents with extensive coastlines and shallow inland seas.',
-    'The climate remains warm and shifts from more dry to more humid. Forests grow near the polar regions, large arid expanses exist closer to the equator.',
-    'Biodiversity recovers from the Permian-Triassic extinction. Initially, reptiles dominate on land. Dinosaurs appear and rapidly diversify, becoming widespread after the Triassic–Jurassic extinction. First flying animals appear, evolving into birds. First mammals appear.',
-    'Conifers and ferns dominate among land plants. Flowering plants appear and become widespread across the Earth by the end of the era.',
-    'The Cretaceous-Paleogene extinction event occurs 66 million years ago, caused by the impact of a massive asteroid. It wipes out all non-avian dinosaus, most other large terrestrial animals and large marine reptiles.'
+    'The supercontinent of <b>Pangaea</b> breaks up about 175 million years ago, splitting into <b>Laurasia</b> in the north and <b>Gondwana</b> in the south. <b>Gondwana</b> further splits into several pieces that would later become <b>Africa</b>, <b>South America</b>, <b>Antarctica</b>, and <b>Australia</b>.',
+    'The climate remains generally warm. Forests grow near the poles, large arid expanses are common near the equator. Oxygen concentration in the atmosphere decreases to 20% and remains at that level.',
+    'Biodiversity recovers from the <b>Permian-Triassic extinction</b>. The process takes up to 30 million years.',
+    'Initially, <b>reptiles</b> dominate on land. <b>Dinosaurs</b> appear and rapidly diversify, becoming widespread after the <b>Triassic–Jurassic extinction</b> 201 million years ago. Some species reach over 30 meters in size, becoming the largest known terrestrial animals.',
+    'First flying vertebrates appear, such as <b>pterosaurs</b> and <b>birds</b>. First true <b>mammals</b> emerge, although remain small-sized. Some modern insects appear.',
+    'Seed-producing plants (gymnosperms), such as <b>conifers</b> and <b>ferns</b>, dominate on land. <b>Flowering plants</b> (angiosperms) appear and become widespread across the Earth by the end of the era.',
+    'Aquatic life continues to flourish. Large marine reptiles thrive in the oceans. Turtles significantly diversify.',
+    'The <b>Cretaceous-Paleogene extinction event</b> occurs 66 million years ago, caused by the impact of a massive asteroid. It wipes out all non-avian dinosaus, together with most other large terrestrial and marine animals.'
   ]
 }
 
@@ -554,8 +584,8 @@ const Hadean: Division = {
   image: true,
   description: [
     'The beginning of the Hadean Eon is defined by the age of the oldest known solid material in the Solar System, found in meteorites and measured at 4.567 billion years old.',
-    'The <b>Earth</b> formes about 4.54 billion years ago from an <b>accretion disk</b>, a cloud of gas and dust left over from the formation of the Sun.',
-    'The <b>Moon</b> formes tens of millions of years after the Earth\'s formation. According to the <b>impact hypothesis</b>, a large stellar body struck the Earth with a glancing blow, causing a portion of its material to be ejected into orbit and forming the Moon.',
+    'The <b>Earth</b> forms about 4.54 billion years ago from an <b>accretion disk</b>, a cloud of gas and dust left over from the formation of the Sun.',
+    'The <b>Moon</b> forms tens of millions of years after the Earth\'s formation. According to the <b>impact hypothesis</b>, a large stellar body struck the Earth with a glancing blow, causing a portion of its material to be ejected into orbit and forming the Moon.',
     'Initially, the Earth is molten due to frequent collisions with asteroids and other such objects. Later, the outer layer of the planet cools down and forms a solid crust. Gases form the atmosphere, and water condenses on the rocky surface.',
     'The initial heavy atmosphere consists mostly of carbon dioxide, has a surface temperature exceeding 200 °C and an atmospheric pressure of above 25 modern atmospheres.',
     'In the late Hadean, most of the planet\'s surface is covered by oceans. Water remains liquid at temperatures above 100 °C due to the high atmospheric pressure. Continents or islands may exist, but occupy a fairly small area.',
@@ -589,7 +619,7 @@ const Proterozoic: Division = {
   image: true,
   subdivisions: [Paleoproterozoic, Mesoproterozoic, Neoproterozoic],
   description: [
-    'The movement of tectonic plates continues. <b>Kenorland</b> breaks apart roughly 2.1 billion years ago. New supercontinents keep forming and breaking up: <b>Columbia</b> (<b>Nuna</b>) exists between 1.8 and 1.35 billion years ago, <b>Rodinia</b> exists between 1.13 and 0.7 billion years ago. The fifth supercontinent, <b>Pannotia</b>, formes about 630 million years ago.',
+    'The movement of tectonic plates continues. <b>Kenorland</b> breaks apart roughly 2.1 billion years ago. New supercontinents keep forming and breaking up: <b>Columbia</b> (<b>Nuna</b>) exists between 1.8 and 1.35 billion years ago, <b>Rodinia</b> between 1.13 and 0.7 billion years ago, <b>Pannotia</b> between 630 and 570 million years ago. <b>Gondwana</b> forms 550 million years ago.',
     'Microorganisms keep producing oxygen. It reacts with minerals dissolved in the oceans, turning the water clear. It also builds up in the atmosphere, causing a mass extinction of <b>anaerobic</b> organisms for which oxygen is toxic. This is known as the <b>Great Oxidation Event</b> (2.4 to 2.0 billion years ago).',
     'Decreased concentrations of greenhouse gases trigger the <b>Huronian glaciation</b> (2.4 to 2.1 billion years ago). The climate stabilizes 1.8 billion years ago and remains almost unchanged for a billion years (so-called <b>Boring Billion</b>). Severe glaciations occur between 750 and 635 million years ago, with glaciers reaching the equator (<b>Snowball Earth</b>). Warm and humid climate establishes again near the end of the eon.',
     'Unicellular <b>prokaryotic</b> organisms, such as cyanobacteria, continue to be the predominant form of life during most of the eon, evolving and diversifying.',
