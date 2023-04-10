@@ -1,16 +1,6 @@
 import { Division } from './interfaces';
 
 
-const PlaceholderDescription: string[] = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ipsum mauris, nec consectetur mauris accumsan quis.',
-  // 'Aenean malesuada augue quam, ultricies finibus turpis ornare tincidunt. Duis bibendum sem tortor, eu cursus orci tempor eu. Nullam auctor, arcu vel dignissim rutrum, nunc massa posuere erat, a fermentum dolor ipsum sit amet est. Nulla porttitor odio a nulla vehicula, sed aliquam urna tincidunt.',
-  // 'Cras blandit, mi vulputate tempor vulputate, est purus tristique arcu, posuere tempor odio elit quis odio. Fusce finibus massa tortor, at aliquet nisi imperdiet eu.',
-  // ' Aliquam eget mauris odio. Sed et sem vitae purus rutrum laoreet. Donec ut velit porttitor velit iaculis malesuada in eget nunc.',
-  // 'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ultrices turpis ut commodo mollis. Sed gravida interdum hendrerit.',
-  // 'Donec ut magna ac tortor ornare scelerisque. Pellentesque egestas nisl condimentum ligula sagittis posuere. Vestibulum vel massa id tellus pharetra tempor. Proin a justo sagittis tortor maximus luctus. Nulla ac iaculis tortor, at sodales neque. '
-];
-
-
 // Epochs
 
 const Paleocene: Division = {
@@ -18,12 +8,15 @@ const Paleocene: Division = {
   name: 'Paleocene',
   start: 66,
   end: 56,
+  image: true,
   subdivisions: [],
   description: [
-    'The continents of the Northern Hemisphere are still connected via land bridges. South America, Antarctica, and Australia are also not completely separated yet.',
-    'The climate is warm, without permanent ice sheets near the poles. Global average temperatures are about 24–25 °C.',
-    'Continents are covered with dense forests, populated mainly by small creatures. Mammals rapidly diversify and fill the ecological niches vacated by the Cretaceous-Paleogene extinction. The earliest placental and marsupial mammals appear.',
-    'The end of the epoch is marked by the Paleocene–Eocene Thermal Maximum, a major climatic event in which a massive amount of carbon is released into the atmosphere, causing a spike in global temperatures.'
+    'The landmass of <b>Laurasia</b> breaks apart (forming <b>North America</b>, <b>Europe</b>, and <b>Asia</b>), although the continents are still connected via land bridges. <b>South America</b>, <b>Antarctica</b>, and <b>Australia</b> are also not fully separated yet.',
+    'The climate is warm and humid, with no permanent ice caps near the poles. Global average temperatures remain around 24-25 °C.',
+    'Continents are covered with dense tropical and subtropical <b>forests</b>, populated mainly by small creatures. Many new species of <b>fruit-bearing plants</b> appear.',
+    '<b>Mammals</b> rapidly diversify and fill the ecological niches vacated by the Cretaceous-Paleogene extinction. The earliest <b>placental</b> and <b>marsupial</b> mammals appear. Birds and insects also diversify.',
+    'Various species of <b>ray-finned fish</b> become much more common in the oceans and increase in sizes. Marine invertebrates recover to their former diversity, though it takes about 7 million years.', 
+    'The end of the epoch is marked by the <b>Paleocene-Eocene Thermal Maximum</b>, a major climatic event in which a massive amount of carbon is released into the atmosphere, causing a brief spike in global temperatures.'
   ]
 }
 
@@ -32,12 +25,14 @@ const Eocene: Division = {
   name: 'Eocene',
   start: 56,
   end: 34,
+  image: true,
   subdivisions: [],
   description: [
-    'Continents continue to drift towards their modern positions. Australia splits from Antarctica around 45 million years ago.',
-    'The climate keeps warming until it reaches the Eocene Optimum at around 49 million years ago, then begins to coool down. Sea level reaches up to 150 m higher than modern levels.',
-    'Many groups of modern mammals appear, though most animals still remain small (under 10 kg). New groups of birds evolve. Plants and marine fauna also becomes quite modern.',
-    'The epoch ends with the Eocene–Oligocene extinction event (also known as Grande Coupure), affecting mostly marine and aquatic species.'
+    'Continents continue to drift towards their modern positions. <b>Australia</b> splits from <b>Antarctica</b> about 45 million years ago.',
+    'The climate keeps warming until it reaches the <b>Eocene Optimum</b> about 49 million years ago, then reverses to a cooling trend. Sea levels reach their maximum, up to 150 m higher than today.',
+    'Tropical flora, such as palm trees, grows in the polar regions. Warm temperate forests cover Antarctica. As the cooling begins, deciduous trees (those which seasonally shed leaves) become more common and overtake evergreen tropical species.',
+    'Many groups of modern <b>mammals</b> appear (horses, elephants, bats, primates). Although the vast majority of creatures remain small, some groups of <b>herbivorous megafauna</b> (large plant-eating animals) and large terrestrial predators evolve. <b>Whales</b> diversify in the oceans.',
+    'The epoch ends with the <b>Eocene–Oligocene extinction event</b> (also known as <b>Grande Coupure</b>), affecting mostly marine life and aquatic species.'
   ]
 }
 
@@ -46,13 +41,14 @@ const Oligocene: Division = {
   name: 'Oligocene',
   start: 34,
   end: 23,
+  image: true,
   subdivisions: [],
   description: [
-    'The sea which used to separate <b>Europe</b> from <b>Asia</b> disappears, a persistent land connection between the two continents establishes. The passage between <b>South America</b> and <b>Antarctica</b> possibly appears. Modern mountain ranges (such as the <b>Alps</b> and the <b>Andes</b>) are rising.',
-    'A rapid cooling occures about 33.5 million years ago. An ice sheet forms in Antarctica, it keeps growing and covers the entire continent. Sea levels drop by 105 meters. The climate remains cold until about 25 million years ago, when it temporarily gets warmer.',
-    'Tropical and subtropical forests recede, getting replaced by temperate forests. Open plains and deserts became more common. Grasses and flowering plants expand their reach.',
-    'The cooling climate, together with the opening and closing of land bridges, leads to a reorganization of the land fauna. Modern groups of <b>mammals</b> (such as horses, rhinoceroses, camels, deer, dogs, bears, weasels, raccoons) diversify and replace previously dominant groups, such as creodonts. Largest land mammals that ever existed, such as Paraceratherium, appear in Eurasia.',
-    'Many species of marine snails and clams go extinct due to the cooling, and the overall diversity of marine life diminishes. However, some new species of whales and sharks evolve.'
+    'The sea between <b>Europe</b> and <b>Asia</b> disappears, a persistent land connection links the two continents together. <b>South America</b> probably separates from <b>Antarctica</b> (the exact timing is disputed).',
+    'A rapid cooling occurs about 33.5 million years ago. An <b>ice sheet</b> forms in <b>Antarctica</b> and continues to grow until it covers the entire continent. Sea levels drop by 105 meters. The climate remains relatively cold until about 25 million years ago, when it temporarily becomes warmer.',
+    'Tropical and subtropical forests recede, getting replaced by temperate forests. Open plains and deserts become more common. <b>Grasses</b> and <b>flowering plants</b> expand their reach.',
+    'Modern groups of <b>mammals</b> (such as horses, rhinoceroses, camels, deer, dogs, bears, weasels, raccoons) diversify and replace previously dominant groups, such as creodonts. The largest known land mammals, such as Paraceratherium (reaching 15-20 tonnes), appear in Eurasia.',
+    'Many groups of <b>marine snails</b> and <b>clams</b> become extinct due to the cooling, and the overall diversity of marine life diminishes. However, some new species of whales and sharks appear.'
   ]
 }
 
@@ -61,8 +57,16 @@ const Miocene: Division = {
   name: 'Miocene',
   start: 23,
   end: 5.33,
+  image: true,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    '<b>Africa</b> collides with <b>Europe</b>, forming the Mediterranean Sea and allowing an interchange of fauna with <b>Eurasia</b>.',
+    'The epoch begins with a cooling event about 23 million years ago. Temperatures rise between 21 and 15 million years ago, then take a sharp drop once again and continue to decrease.',
+    '<b>Grassland ecosystems</b> continue to expand, providing habitats for grazing animals (horses, deer, camels, rhinoceroses, hippos) pursued by large predators. Many groups of modern <b>birds</b> appear (ducks, owls, cockatoos, crows). <b>Snakes</b> significantly diversify.',
+    'Multiple species of <b>apes</b> emerge and spread across Africa and Eurasia. First <b>hominins</b> (apes capable of walking on two legs) appear.',
+    '<b>Kelp forests</b> spread in shallow seas, providing a new comfortable habitat for fish and invertebrates. <b>Whales</b> reach their peak diversity in the oceans. New species of large-sized <b>sharks</b> appear.',
+    'A number of terrestrial and aquatic organisms go extinct between 14.8 and 14.5 million years ago, follwing the changes in global climate. This event is known as the <b>Middle Miocene disruption</b>.'
+  ]
 }
 
 const Pliocene: Division = {
@@ -70,8 +74,15 @@ const Pliocene: Division = {
   name: 'Pliocene',
   start: 5.33,
   end: 2.58,
+  image: true,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    'A land bridge establishes between <b>North America</b> and <b>South America</b>, allowing an interchange of fauna and significantly altering oceanic currents.',
+    'The climate is gradually cooling, although remains slightly warmer than modern. Sea levels are about 25 meters higher than today. An ice sheet forms over Greenland about 3 million years ago.',
+    '<b>Deciduous forests</b> (comprised of plants that seasonally shed leaves) and <b>grasslands</b> become more common. <b>Tundra</b> covers large areas in high latitudes. Tropical forests are limited to a tight band near the equator.',
+    'Both marine and continental faunas become more similar to modern, yet present-day animals still live side by side with many prehistoric species.',
+    'Ancestors of <b>humans</b> continue to evolve, developing more complex brain and the ability to walk consistently on two legs. First stone tools appear about 3.4 million years ago, marking the beginning of the <b>Stone Age</b>.'
+  ]
 }
 
 const Pleistocene: Division = {
@@ -79,8 +90,15 @@ const Pleistocene: Division = {
   name: 'Pleistocene',
   start: 2.58,
   end: 0.011,
+  image: true,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    'The continents remain essentially near their modern positions, moving no more than 100 km since the beginning of the epoch.',
+    'The climate is marked by repeated cycles of glaciations, commonly known as <b>Ice Ages</b>, with continental ice sheets growing and retreating every 40-100 thousand years. Sea levels drop during colder phases and rise during warmer phases, with an amplitude of about 100-120 meters.',
+    'Flora and fauna are mostly similar to modern, with many species retreating southward with each cold phase and spreading to higher latitudes during warm phases of the climate.',
+    'Large land mammals (such as mammoths, mastodons, woolly rhinoceros, saber-toothed cats, giant sloths, cave bears, dire wolves) are common. They disappear near the end of the epoch, in a process known as <b>Quaternary extinction</b>.',
+    'Anatomically modern <b>humans</b> appear (<b>Homo erectus</b> about 2 million years ago, <b>Homo sapiens</b> about 300 thousand years ago) and spread from Africa to other continents. They learn to use fire for cooking and heating.'
+  ]
 }
 
 const Holocene: Division = {
@@ -88,8 +106,14 @@ const Holocene: Division = {
   name: 'Holocene',
   start: 0.011,
   end: 0,
+  image: true,
   subdivisions: [],
-  description: PlaceholderDescription
+  description: [
+    'The continents move less than 1 km over a span of only ten thousand years. However, the melting of ice causes sea levels to rise by about 65 m since the beginning of the epoch, altering the coastlines.',
+    'The climate is warming between 11 and 8 thousand years ago, then remains rather stable with a gradual cooling trend. A breef cooling event occurs about 8200 years ago and lasts about 400 years. Another mild cooling, known as the <b>Little Ice Age</b>, lasts between the 14th and the 19th century. A rapid increase in global temperatures is observed over the last 150 years.',
+    'All recorded <b>human history</b> happens during this epoch. With the development of agriculture between 10 and 7 thousand years ago, humans establish permanent settlements and form ancient civilizations. As a result of gradual scientific and technological progress, human civilization becomes global.',
+    'Human activity causes a significant decrease in biodiversity, known as the <b>Holocene extinction</b>. Multiple species of bacteria, fungi, plants and animals disapper. This process is ongoing.'
+  ]
 }
 
 
@@ -398,8 +422,15 @@ const Paleogene: Division = {
   name: 'Paleogene',
   start: 66,
   end: 23,
+  image: true,
   subdivisions: [Paleocene, Eocene, Oligocene],
-  description: PlaceholderDescription
+  description: [
+    'Continents begin to resemble their modern shapes. <b>Laurasia</b> breaks up, forming <b>North America</b>, <b>Europe</b>, and <b>Asia</b>. <b>South America</b> and <b>Australia</b> split from <b>Antarctica</b>.',
+    'The climate keeps gradually warming until it reaches the <b>Eocene Optimum</b> about 49 million years ago, then reverses to a cooling trend. Temperatures remain significantly lower between 33.5 and 25 million years ago.',
+    'In the early Paleogene, dense evergreen forests cover the landmasses. As the cooling begins, temperate forests and open plains become more common. An ice sheet forms in Antarctica about 33 million years ago, covering the entire continent by the end of the period.',
+    '<b>Mammals</b> rapidly diversify and fill the ecological niches formerly taken by dinosaus. Many groups of modern mammals appear (horses, elephants, rhinoceroses, camels, deer, dogs, bears, weasels, raccoons, bats, primates). Most creatures remain small, however some large herbivores (plant-eating animals) and large terrestrial predators evolve.',
+    'In the oceans, <b>ray-finned fish</b> becomes much more common. New species of whales appear. Marine life gets hit by the <b>Eocene–Oligocene extinction</b> (also known as <b>Grande Coupure</b>) about 34 million years ago. The subsequent cooling also diminishes the biodiversity.'
+  ]
 }
 
 const Neogene: Division = {
@@ -407,8 +438,15 @@ const Neogene: Division = {
   name: 'Neogene',
   start: 23,
   end: 2.58,
+  image: true,
   subdivisions: [Miocene, Pliocene],
-  description: PlaceholderDescription
+  description: [
+    'Continents continue to drift towards their modern positions. <b>Africa</b> collides with <b>Europe</b>, forming the Mediterranean Sea. A land bridge establishes between <b>North America</b> and <b>South America</b>.',
+    'A rapid cooling occurs about 23 million years ago. Temperatures rise between 21 and 15 million years ago, then a strong cooling trend establishes and continues throughout the period.',
+    '<b>Grassland ecosystems</b> and <b>temperate forests</b> become widespread, tropical forests only exist near the equator. <b>Kelp forests</b> spread in shallow seas at low latitudes.',
+    'Land <b>mammals</b> keep evolving and taking more modern shapes. Many groups of modern <b>birds</b> (ducks, owls, cockatoos, crows) and <b>snakes</b> evolve. <b>Whales</b> reach their peak diversity, new large-sized <b>sharks</b> appear.',
+    'Multiple species of <b>apes</b> appear and spread across Africa and Eurasia. <b>Hominins</b> (the ancestors of modern humans) develop more complex brain and start walking on two legs. First stone tools are made about 3.4 million years ago, marking the beginning of the <b>Stone Age</b>.'
+  ]
 }
 
 const Quaternary: Division = {
@@ -416,8 +454,17 @@ const Quaternary: Division = {
   name: 'Quaternary',
   start: 2.58,
   end: 0,
+  image: true,
   subdivisions: [Pleistocene, Holocene],
-  description: PlaceholderDescription
+  description: [
+    'Continents remain essentially near their modern positions, moving no more than 100 kilometers since the beginning of the period.',
+    'The climate is marked by repeated cycles of glaciations, commonly known as <b>Ice Ages</b>, with continental ice sheets growing and retreating every 40-100 thousand years. Sea levels drop during colder phases and rise during warmer phases, with an amplitude of about 100-120 meters.',
+    'Flora and fauna are mostly similar to modern. Many species retreat southward with each cold phase and spread to higher latitudes during warm phases of the climate.',
+    'Large land mammals (such as mammoths, mastodons, woolly rhinoceros, saber-toothed cats, giant sloths, cave bears, dire wolves) remain common until the end of the period. They disappear between 120 and 11 thousand years ago in a process known as <b>Quaternary extinction</b>.',
+    'Anatomically modern <b>humans</b> appear (<b>Homo erectus</b> about 2 million years ago, <b>Homo sapiens</b> about 300 thousand years ago) and spread from Africa to other continents.',
+    'All recorded <b>human history</b> happens within the last 10 thousand years. With the development of agriculture, humans establish permanent settlements and form ancient civilizations. As a result of gradual scientific and technological progress, human civilization becomes global.',
+    'Human activity causes a significant decrease in biodiversity, known as the <b>Holocene extinction</b>. Multiple species of bacteria, fungi, plants and animals disapper. This process is ongoing.'
+  ]
 }
 
 
@@ -557,7 +604,7 @@ const Mesozoic: Division = {
     'Biodiversity recovers from the <b>Permian-Triassic extinction</b>. The process takes up to 30 million years.',
     'Initially, <b>reptiles</b> dominate on land. <b>Dinosaurs</b> appear and rapidly diversify, becoming widespread after the <b>Triassic–Jurassic extinction</b> 201 million years ago. Some species reach over 30 meters in size, becoming the largest known terrestrial animals.',
     'First flying vertebrates appear, such as <b>pterosaurs</b> and <b>birds</b>. First true <b>mammals</b> emerge, although remain small-sized. Some modern insects appear.',
-    'Seed-producing plants (gymnosperms), such as <b>conifers</b> and <b>ferns</b>, dominate on land. <b>Flowering plants</b> (angiosperms) appear and become widespread across the Earth by the end of the era.',
+    '<b>Gymnosperms</b> (seed-producing plants), such as <b>conifers</b> and <b>ferns</b>, dominate on land. <b>Angiosperms</b> (flowering plants) appear and become widespread across the Earth by the end of the era.',
     'Aquatic life continues to flourish. Large marine reptiles thrive in the oceans. Turtles significantly diversify.',
     'The <b>Cretaceous-Paleogene extinction event</b> occurs 66 million years ago, caused by the impact of a massive asteroid. It wipes out all non-avian dinosaus, together with most other large terrestrial and marine animals.'
   ]
@@ -568,8 +615,16 @@ const Cenozoic: Division = {
   name: 'Cenozoic',
   start: 66,
   end: 0,
+  image: true,
   subdivisions: [Paleogene, Neogene, Quaternary],
-  description: PlaceholderDescription
+  description: [
+    'Continents gradually take their modern shapes and positions. <b>Laurasia</b> splits into <b>North America</b>, <b>Europe</b>, and <b>Asia</b> between 66 and 30 million years ago. <b>Antarctica</b> separates from <b>Australia</b> (about 45 million years ago) and from <b>South America</b> (when exactly is unclear). Land bridges connect Africa with Eurasia (15-19 million years ago) and North America with South America (3-5 million years ago).',
+    'The climate remains warm during the early Cenozoic. A cooling trend begins about 50 million years ago and continues throughout most of the era, leading to periodic glaciations (commonly known as <b>Ice Ages</b>) since about 2.5 million years ago.',
+    'Early in the era, extensive <b>forests</b> cover the landmasses and grow even in the polar regions. As the planet gets cooler, forests retreat, giving way to <b>grasslands</b> and <b>savannas</b>. ',
+    'Following the extinction of dinosaus, <b>mammals</b> become the new predominant group of animals. Most of the modern terrestrial fauna appears. <b>Birds</b>, <b>insects</b>, and <b>snakes</b> also significantly diversify.',
+    'Among other groups of mammals, <b>primates</b> emerge and gradually develop, leading to the evolution of <b>humans</b>. The <b>Stone Age</b> begins about 3.4 million years ago. Anatomically modern <b>Homo sapiens</b> appears about 300 thousand years ago. All <b>recorded history</b> takes place within the last 10 thousand years.',
+    'The <b>Eocene-Oligocene extinction</b> occurs about 34 million years ago, affecting mostly aquatic life. Large land mammals (also called megafauna) disappear between 120 and 11 thousand years ago in a process known as the <b>Quaternary extinction</b>. Human activity causes a significant decline in biodiversity, known as the ongoing <b>Holocene extinction</b>.'
+  ]
 }
 
 
@@ -633,8 +688,15 @@ const Phanerozoic: Division = {
   name: 'Phanerozoic',
   start: 538,
   end: 0,
+  image: true,
   subdivisions: [Paleozoic, Mesozoic, Cenozoic],
-  description: PlaceholderDescription
+  description: [
+    '<b>Gondwana</b> collides with smaller landmasses, forming the supercontinent of <b>Pangaea</b> about 336 million years ago. It splits again about 175 million years ago into <b>Laurasia</b> in the north and <b>Gondwana</b> in the south. Those two landmasses further break up, resulting in the formation of modern continents.',
+    'Most of the evolution of complex life forms happens during this eon. It begins with a rapid diversification of marine species about 540-520 million years ago, known as the <b>Cambrian Explosion</b>. Life frourishes in the oceans and eventually spreads to the continents, forming terrestrial ecosystems. <b>Dinosaurs</b> appear 245-233 million years ago and dominate until 66 million years ago. <b>Mammals</b> take their place and thrive until modern times.',
+    'Multiple extinction events occur. Among those most important are the <b>Permian-Triassic extinction</b>, which eliminates nearly 95% of marine life and 70% of terrestrial species 252 million years ago, and the famous <b>Cretaceous-Paleogene extinction</b>, which wipes out dinosaurs and most other large animals 66 million years ago.',
+    'Among other groups of mammals, <b>primates</b> emerge 85-55 million years ago and gradually develop, leading to the evolution of <b>humans</b>. The <b>Stone Age</b> begins about 3.4 million years ago. Humans become anatomically modern about 2 million years ago. <b>Homo sapiens</b> appears about 300 thousand years ago.',
+    'All recorded <b>human history</b> takes place within the last 10 thousand years, less than 0.002% of the eon. Humans develop agriculture, establish permanent settlements, advance complex science, and form a global civilization.'
+  ]
 }
 
 
