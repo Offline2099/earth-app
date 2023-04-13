@@ -23,7 +23,7 @@ const Paleocene: Division = {
 const Eocene: Division = {
   type: 'Epoch',
   name: 'Eocene',
-  start: 56,
+  start: Paleocene.end,
   end: 34,
   image: true,
   subdivisions: [],
@@ -39,7 +39,7 @@ const Eocene: Division = {
 const Oligocene: Division = {
   type: 'Epoch',
   name: 'Oligocene',
-  start: 34,
+  start: Eocene.end,
   end: 23,
   image: true,
   subdivisions: [],
@@ -55,7 +55,7 @@ const Oligocene: Division = {
 const Miocene: Division = {
   type: 'Epoch',
   name: 'Miocene',
-  start: 23,
+  start: Oligocene.end,
   end: 5.33,
   image: true,
   subdivisions: [],
@@ -72,7 +72,7 @@ const Miocene: Division = {
 const Pliocene: Division = {
   type: 'Epoch',
   name: 'Pliocene',
-  start: 5.33,
+  start: Miocene.end,
   end: 2.58,
   image: true,
   subdivisions: [],
@@ -88,7 +88,7 @@ const Pliocene: Division = {
 const Pleistocene: Division = {
   type: 'Epoch',
   name: 'Pleistocene',
-  start: 2.58,
+  start: Pliocene.end,
   end: 0.011,
   image: true,
   subdivisions: [],
@@ -104,7 +104,7 @@ const Pleistocene: Division = {
 const Holocene: Division = {
   type: 'Epoch',
   name: 'Holocene',
-  start: 0.011,
+  start: Pleistocene.end,
   end: 0,
   image: true,
   subdivisions: [],
@@ -137,7 +137,7 @@ const Siderian: Division = {
 const Rhyacian: Division = {
   type: 'Period',
   name: 'Rhyacian',
-  start: 2300,
+  start: Siderian.end,
   end: 2050,
   subdivisions: [],
   description: [
@@ -151,7 +151,7 @@ const Rhyacian: Division = {
 const Orosirian: Division = {
   type: 'Period',
   name: 'Orosirian',
-  start: 2050,
+  start: Rhyacian.end,
   end: 1800,
   subdivisions: [],
   description: [
@@ -165,7 +165,7 @@ const Orosirian: Division = {
 const Statherian: Division = {
   type: 'Period',
   name: 'Statherian',
-  start: 1800,
+  start: Orosirian.end,
   end: 1600,
   subdivisions: [],
   description: [
@@ -179,7 +179,7 @@ const Statherian: Division = {
 const Calymmian: Division = {
   type: 'Period',
   name: 'Calymmian',
-  start: 1600,
+  start: Statherian.end,
   end: 1400,
   subdivisions: [],
   description: [
@@ -192,7 +192,7 @@ const Calymmian: Division = {
 const Ectasian: Division = {
   type: 'Period',
   name: 'Ectasian',
-  start: 1400,
+  start: Calymmian.end,
   end: 1200,
   subdivisions: [],
   description: [
@@ -206,7 +206,7 @@ const Ectasian: Division = {
 const Stenian: Division = {
   type: 'Period',
   name: 'Stenian',
-  start: 1200,
+  start: Ectasian.end,
   end: 1000,
   subdivisions: [],
   description: [
@@ -221,7 +221,7 @@ const Stenian: Division = {
 const Tonian: Division = {
   type: 'Period',
   name: 'Tonian',
-  start: 1000,
+  start: Stenian.end,
   end: 720,
   image: true,
   subdivisions: [],
@@ -236,7 +236,7 @@ const Tonian: Division = {
 const Cryogenian: Division = {
   type: 'Period',
   name: 'Cryogenian',
-  start: 720,
+  start: Tonian.end,
   end: 635,
   image: true,
   subdivisions: [],
@@ -252,7 +252,7 @@ const Cryogenian: Division = {
 const Ediacaran: Division = {
   type: 'Period',
   name: 'Ediacaran',
-  start: 635,
+  start: Cryogenian.end,
   end: 538,
   image: true,
   subdivisions: [],
@@ -268,7 +268,7 @@ const Ediacaran: Division = {
 const Cambrian: Division = {
   type: 'Period',
   name: 'Cambrian',
-  start: 538,
+  start: Ediacaran.end,
   end: 485,
   image: true,
   subdivisions: [],
@@ -285,7 +285,7 @@ const Cambrian: Division = {
 const Ordovician: Division = {
   type: 'Period',
   name: 'Ordovician',
-  start: 485,
+  start: Cambrian.end,
   end: 444,
   image: true,
   subdivisions: [],
@@ -301,7 +301,7 @@ const Ordovician: Division = {
 const Silurian: Division = {
   type: 'Period',
   name: 'Silurian',
-  start: 444,
+  start: Ordovician.end,
   end: 419,
   image: true,
   subdivisions: [],
@@ -317,7 +317,7 @@ const Silurian: Division = {
 const Devonian: Division = {
   type: 'Period',
   name: 'Devonian',
-  start: 419,
+  start: Silurian.end,
   end: 359,
   image: true,
   subdivisions: [],
@@ -335,7 +335,7 @@ const Devonian: Division = {
 const Carboniferous: Division = {
   type: 'Period',
   name: 'Carboniferous',
-  start: 359,
+  start: Devonian.end,
   end: 299,
   image: true,
   subdivisions: [],
@@ -352,7 +352,7 @@ const Carboniferous: Division = {
 const Permian: Division = {
   type: 'Period',
   name: 'Permian',
-  start: 299,
+  start: Carboniferous.end,
   end: 252,
   image: true,
   subdivisions: [],
@@ -368,7 +368,7 @@ const Permian: Division = {
 const Triassic: Division = {
   type: 'Period',
   name: 'Triassic',
-  start: 252,
+  start: Permian.end,
   end: 201,
   image: true,
   subdivisions: [],
@@ -385,7 +385,7 @@ const Triassic: Division = {
 const Jurassic: Division = {
   type: 'Period',
   name: 'Jurassic',
-  start: 201,
+  start: Triassic.end,
   end: 145,
   image: true,
   subdivisions: [],
@@ -403,7 +403,7 @@ const Jurassic: Division = {
 const Cretaceous: Division = {
   type: 'Period',
   name: 'Cretaceous',
-  start: 145,
+  start: Jurassic.end,
   end: 66,
   image: true,
   subdivisions: [],
@@ -420,7 +420,7 @@ const Cretaceous: Division = {
 const Paleogene: Division = {
   type: 'Period',
   name: 'Paleogene',
-  start: 66,
+  start: Cretaceous.end,
   end: 23,
   image: true,
   subdivisions: [Paleocene, Eocene, Oligocene],
@@ -436,7 +436,7 @@ const Paleogene: Division = {
 const Neogene: Division = {
   type: 'Period',
   name: 'Neogene',
-  start: 23,
+  start: Paleogene.end,
   end: 2.58,
   image: true,
   subdivisions: [Miocene, Pliocene],
@@ -452,7 +452,7 @@ const Neogene: Division = {
 const Quaternary: Division = {
   type: 'Period',
   name: 'Quaternary',
-  start: 2.58,
+  start: Neogene.end,
   end: 0,
   image: true,
   subdivisions: [Pleistocene, Holocene],
@@ -487,7 +487,7 @@ const Eoarchean: Division = {
 const Paleoarchean: Division = {
   type: 'Era',
   name: 'Paleoarchean',
-  start: 3600,
+  start: Eoarchean.end,
   end: 3200,
   subdivisions: [],
   description: [
@@ -501,7 +501,7 @@ const Paleoarchean: Division = {
 const Mesoarchean: Division = {
   type: 'Era',
   name: 'Mesoarchean',
-  start: 3200,
+  start: Paleoarchean.end,
   end: 2800,
   subdivisions: [],
   description: [
@@ -515,7 +515,7 @@ const Mesoarchean: Division = {
 const Neoarchean: Division = {
   type: 'Era',
   name: 'Neoarchean',
-  start: 2800,
+  start: Mesoarchean.end,
   end: 2500,
   subdivisions: [],
   description: [
@@ -529,7 +529,7 @@ const Neoarchean: Division = {
 const Paleoproterozoic: Division = {
   type: 'Era',
   name: 'Paleoproterozoic',
-  start: 2500,
+  start: Neoarchean.end,
   end: 1600,
   image: true,
   subdivisions: [Siderian, Rhyacian, Orosirian, Statherian],
@@ -545,7 +545,7 @@ const Paleoproterozoic: Division = {
 const Mesoproterozoic: Division = {
   type: 'Era',
   name: 'Mesoproterozoic',
-  start: 1600,
+  start: Paleoproterozoic.end,
   end: 1000,
   image: true,
   subdivisions: [Calymmian, Ectasian, Stenian],
@@ -561,7 +561,7 @@ const Mesoproterozoic: Division = {
 const Neoproterozoic: Division = {
   type: 'Era',
   name: 'Neoproterozoic',
-  start: 1000,
+  start: Mesoproterozoic.end,
   end: 538,
   image: true,
   subdivisions: [Tonian, Cryogenian, Ediacaran],
@@ -578,7 +578,7 @@ const Neoproterozoic: Division = {
 const Paleozoic: Division = {
   type: 'Era',
   name: 'Paleozoic',
-  start: 538,
+  start: Neoproterozoic.end,
   end: 252,
   image: true,
   subdivisions: [Cambrian, Ordovician, Silurian, Devonian, Carboniferous, Permian],
@@ -594,7 +594,7 @@ const Paleozoic: Division = {
 const Mesozoic: Division = {
   type: 'Era',
   name: 'Mesozoic',
-  start: 252,
+  start: Paleozoic.end,
   end: 66,
   image: true,
   subdivisions: [Triassic, Jurassic, Cretaceous],
@@ -613,7 +613,7 @@ const Mesozoic: Division = {
 const Cenozoic: Division = {
   type: 'Era',
   name: 'Cenozoic',
-  start: 66,
+  start: Mesozoic.end,
   end: 0,
   image: true,
   subdivisions: [Paleogene, Neogene, Quaternary],
@@ -652,7 +652,7 @@ const Hadean: Division = {
 const Archean: Division = {
   type: 'Eon',
   name: 'Archean',
-  start: 4000,
+  start: Hadean.end,
   end: 2500,
   image: true,
   subdivisions: [Eoarchean, Paleoarchean, Mesoarchean, Neoarchean],
@@ -669,7 +669,7 @@ const Archean: Division = {
 const Proterozoic: Division = {
   type: 'Eon',
   name: 'Proterozoic',
-  start: 2500,
+  start: Archean.end,
   end: 538,
   image: true,
   subdivisions: [Paleoproterozoic, Mesoproterozoic, Neoproterozoic],
@@ -686,7 +686,7 @@ const Proterozoic: Division = {
 const Phanerozoic: Division = {
   type: 'Eon',
   name: 'Phanerozoic',
-  start: 538,
+  start: Proterozoic.end,
   end: 0,
   image: true,
   subdivisions: [Paleozoic, Mesozoic, Cenozoic],
