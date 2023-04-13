@@ -27,12 +27,22 @@
     'timeline-wrapper-normal': !reverseState,
     'timeline-wrapper-reversed': reverseState
   }">
+
+  <div class="timeline-image-wrapper">
+    <img src="./assets/img/timeline/timeline-{{reverseState ? 'end' : 'start' }}.jpg">
+  </div>
+  
   <app-division-container
     *ngFor="let eon of eons"
     [containers]="eons"
     [division]="eon"
     [reverse]="reverseState">
   </app-division-container>
+
+  <div class="timeline-image-wrapper">
+    <img src="./assets/img/timeline/timeline-{{reverseState ? 'start' : 'end' }}.jpg">
+  </div>
+
 </div>
 
 
