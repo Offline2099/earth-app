@@ -5,10 +5,7 @@ import { DivisionContainer } from '../data/interfaces';
 @Component({
   selector: 'app-division-container',
   templateUrl: './division-container.component.html',
-  styleUrls: ['./division-container.component.css'],
-  host: {
-    '[class.subdivisions-displayed]': 'division.showSubdivisions'
-  }
+  styleUrls: ['./division-container.component.css']
 })
 export class DivisionContainerComponent implements OnInit {
 
@@ -31,7 +28,10 @@ export class DivisionContainerComponent implements OnInit {
     let division: DivisionContainer | undefined = 
       containers.find(division => division.name == divisionName);
 
-    if (division !== undefined) division.showSubdivisions = !division.showSubdivisions;
+    if (division !== undefined) {
+      if (!division.subdivisionContainers.length) return;
+      division.showSubdivisions = !division.showSubdivisions;
+    }
     else {
       containers.forEach(division => {
         if (!division.subdivisionContainers.length) return;

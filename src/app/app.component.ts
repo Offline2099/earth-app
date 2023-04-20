@@ -11,7 +11,8 @@ import { Timeline } from './data/timeline';
 export class AppComponent implements OnInit {
 
   eons: DivisionContainer[] = [];
-  reverseState = false;
+  reverseState: boolean = false;
+  controlButtons: string[] = ['Chronological', 'Inversed'];
 
   ngOnInit() {
     this.constructDivsisionContainers();

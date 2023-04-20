@@ -4,60 +4,136 @@
 .main-header {
   display: flex;
   justify-content: center;
-  max-width: 1000px;
-  padding: 20px 0;
-  margin: 0 auto 50px auto;
-  border-bottom: 2px dashed #222;
+  max-width: min(calc(100vw - 60px), 1000px);
+  margin: 20px auto 50px auto;
+  padding: 15px 10px 35px 10px;
+  border-bottom: 2px dashed #282828;
+  color: #9c815f;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
   user-select: none;
 }
 
+@media (max-width: 991px) {
+  .main-header {
+    margin: 10px auto 20px auto;
+    padding: 15px 10px 25px 10px;
+    font-size: 26px;
+  }
+}
 
-/* Intro */
+
+@media (max-width: 599px) {
+  .main-header {
+    max-width: calc(100% - 50px);
+    font-size: 20px;
+  }
+}
+
+
+/* Intro Text */
 
 .main-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
-  font-size: 17px;
-  letter-spacing: .005em;
+  margin: 0 20px;
 }
 
 .main-intro p {
   max-width: 800px;
   margin-bottom: 15px;
+  text-align: justify;
+  font-size: 18px;
+  letter-spacing: .005em;
+}
+
+@media (max-width: 991px) {
+  .main-intro p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    letter-spacing: .01em;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-intro p {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 
-/* Controls */
+/* Timeline Controls */
 
 .main-controls {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 40px 20px;
+  color: #9c815f;
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px;
+  font-weight: 400;
   user-select: none;
 }
 
 .main-controls-label {
-  font-size: 22px;
+  margin-top: 3px;
 }
 
 .main-controls-button {
   display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 15px;
   padding: 3px 10px 5px 10px;
   border-radius: 5px;
   background: #222;
-  font-size: 22px;
   cursor: pointer;
   transition: .2s;
 }
 
-.main-controls-button:hover {
-  background: #282828;
+@media (hover: hover) {
+  .main-controls-button:hover {
+    box-shadow: 0 0 4px 4px #2f271d inset;
+  }
+}
+
+.main-controls-button-underline {
+  width: 0;
+  margin-top: 2px;
+  border-top: 1px dashed #777;
+  transition: .2s;
+}
+
+.main-controls-button-selected .main-controls-button-underline {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .main-controls {
+    margin: 25px 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-controls {
+    margin: 15px 10px;
+    font-size: 16px;
+  }
+  .main-controls-label {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+  .main-controls-button {
+    margin: 5px;
+  }
 }
 
 
@@ -68,24 +144,28 @@
 }
 
 .timeline-wrapper-normal {
-  animation: fadeIn1 .5s;
+  animation: fadeIn1 1s;
 }
 
 .timeline-wrapper-reversed {
-  animation: fadeIn2 .5s;
+  animation: fadeIn2 1s;
 }
 
 
+/* Start and End Timeline Images */
+
 .timeline-image-wrapper {
-  position: relative;
   display: flex;
+  position: relative;
   margin: 20px 0;
   justify-content: center;
+  user-select: none;
 }
 
 .timeline-image-wrapper img {
   display: block;
-  max-width: min(600px, 100%);
+  max-width: min(600px, 100% - 20px);
+  aspect-ratio: 2/1;
   border-radius: 10px;
 }
 
@@ -93,9 +173,16 @@
   content: '';
   position: absolute;
   top: 0;
-  margin: 0 auto;
-  width: min(600px, 100%);
+  width: min(600px, 100% - 20px);
   height: 100%;
+  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 0 5px 5px #080808 inset;
+  box-shadow: 0 0 5px 5px #080808, 0 0 5px 5px #080808 inset;
+}
+
+@media (max-width: 599px) {
+  .timeline-image-wrapper img,
+  .timeline-image-wrapper:after {
+    border-radius: 5px;
+  }
 }

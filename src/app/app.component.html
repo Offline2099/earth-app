@@ -2,7 +2,7 @@
 <!-- Header -->
 <div class="main-header">Geologic History of Earth</div>
 
-<!-- Intro -->
+<!-- Intro Text -->
 <div class="main-intro">
   <p>The history of our planet is much longer than the history of human civilization. Scientists study the layers of ice and rock, examine fossilized remains of extinct creatures, and use various other complex methods to learn about the past. </p>
   <p>The amount of knowledge currently available about the Earth's history is enormous. We now understand that before us there have been dozens upon dozens of periods and epochs, each with its own environmental conditions, climate, geography, ecosystems and biodiversity.</p>
@@ -11,13 +11,15 @@
 
 <!-- Controls -->
 <div class="main-controls">
-  <span class="main-controls-label">Start from: </span>
+  <span class="main-controls-label">Timeline Direction: </span>
   <div 
+    *ngFor="let buttonText of controlButtons; index as i"
     class="main-controls-button"
-    (click)="setReverseState(false)">Formation of Earth</div>
-  <div 
-    class="main-controls-button"
-    (click)="setReverseState(true)">Present Time</div>
+    [ngClass]="{'main-controls-button-selected': i ? reverseState : !reverseState}"
+    (click)="setReverseState(i ? true : false)">
+    <div>{{buttonText}}</div>
+    <div class="main-controls-button-underline"></div>
+  </div>
 </div>
 
 <!-- Timeline -->

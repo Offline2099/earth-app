@@ -5,49 +5,87 @@
 </app-timeline-boundary>
 
 <!-- Division Body -->
-<div class="division-body type-{{dType}} background-{{dName}}">
+<div 
+  class="division-body type-{{dType}} background-{{dName}}"
+  [ngClass]="{
+    'no-subdivisions': !division.subdivisions.length,
+    'subdivisions-displayed': division.showSubdivisions
+  }">
 
-  <!-- Division Name -->
-  <div class="division-name-container">
-    <div class="division-name">{{division.name}} {{division.type}}</div>
-    <div class="division-duration">
-      <div>
-        <span>{{division.start}}</span>
-        <span *ngIf="division.end > 0"> - {{division.end}}</span>
-        <span *ngIf="division.end == 0"> Million Years Ago - </span> 
+  <div 
+    class="division-data-container-outer type-{{dType}}"
+    [ngClass]="{'subdivisions-displayed': division.showSubdivisions}">
+
+    <!-- Division Name -->
+    <div class="division-data-container-inner type-{{dType}}">
+
+      <div class="division-info-container">
+        
+        <div class="division-name">{{division.name}} {{division.type}}</div>
+        <div class="division-duration">
+          <div>
+            <span>{{division.start}}</span>
+            <span *ngIf="division.end > 0"> - {{division.end}}</span>
+            <span *ngIf="division.end == 0"> Million Years Ago - </span> 
+          </div>
+          <div>
+            <span *ngIf="division.end > 0">Million Years Ago</span>
+            <span *ngIf="division.end == 0">Present Time</span> 
+          </div>
+        </div>
+
       </div>
-      <div>
-        <span *ngIf="division.end > 0">Million Years Ago</span>
-        <span *ngIf="division.end == 0">Present Time</span> 
+      
+      <div 
+        *ngIf="division.image" 
+        class="division-image-container">
+        <img src="./assets/img/{{dType}}/{{dName}}.jpg">
       </div>
+
+      <div 
+        *ngIf="division.showSubdivisions"
+        class="timeline-button-container timeline-button-container-inner">
+        <app-timeline-button
+          *ngIf="division.subdivisions.length"
+          text="Hide {{division.subdivisions[0].type}}s"
+          (click)="toggleSubdivisions(containers, division.name)">
+        </app-timeline-button>
+      </div>
+
     </div>
+
+    <!-- Division Description -->
     <div 
-      *ngIf="division.showSubdivisions" 
-      class="timeline-button" 
-      (click)="toggleSubdivisions(containers, division.name)">Hide {{division.subdivisions[0].type}}s</div>
-    <div 
-      *ngIf="division.image" 
-      class="division-image-container">
-      <img src="./assets/img/{{dType}}/{{dName}}.jpg">
+      class="division-description type-{{dType}}"
+      [ngClass]="{'subdivisions-displayed': division.showSubdivisions}">
+      <ul>
+        <li *ngFor="let text of division.description" [innerHTML]="text"></li>
+      </ul>
     </div>
+
   </div>
 
-  <!-- Division Description -->
+  <!-- Subdivisions Button -->
   <div 
-    *ngIf="!division.showSubdivisions"
-    class="division-description">
-    <ul>
-      <li *ngFor="let text of division.description" [innerHTML]="text"></li>
-    </ul>
+    class="timeline-button-container"
+    [ngClass]="{'subdivisions-displayed': division.showSubdivisions}">
+    <div 
+      *ngIf="!division.subdivisions.length"
+      class="timeline-button-placeholder"></div>
+    <app-timeline-button
+      *ngIf="division.subdivisions.length"
+      text="{{division.showSubdivisions ? 'Hide' : 'Explore'}} {{division.subdivisions[0].type}}s"
+      text2="({{division.name}} {{division.type}})"
+      blockType="{{dType}}"
+      (click)="toggleSubdivisions(containers, division.name)">
+    </app-timeline-button>
   </div>
 
   <!-- Subdivisions -->
   <div 
     *ngIf="division.subdivisions.length"
     class="subdivisions-container"
-    [ngClass]="{
-      'container-visible': division.showSubdivisions
-    }">
+    [ngClass]="{'subdivisions-displayed': division.showSubdivisions}">
     <app-division-container
       *ngFor="let subdivision of division.subdivisionContainers"
       [containers]="division.subdivisionContainers"
@@ -56,13 +94,18 @@
     </app-division-container>
   </div>
 
-  <!-- Subdivisions Button -->
+  <!-- Subdivisions Button (Bottom) -->
   <div 
-    *ngIf="division.subdivisions.length && !division.showSubdivisions" 
-    class="timeline-button-container">
-    <div 
-      class="timeline-button" 
-      (click)="toggleSubdivisions(containers, division.name)">Explore<br />{{division.subdivisions[0].type}}s</div>
+    *ngIf="division.showSubdivisions"
+    class="timeline-button-container timeline-button-container-bottom type-{{dType}}">
+    <app-timeline-button
+      *ngIf="division.subdivisions.length"
+      text="Hide {{division.subdivisions[0].type}}s"
+      text2="({{division.name}} {{division.type}})"
+      blockType="{{dType}}"
+      buttonType="bottom"
+      (click)="toggleSubdivisions(containers, division.name)">
+    </app-timeline-button>
   </div>
 
 </div>

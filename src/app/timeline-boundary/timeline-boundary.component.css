@@ -1,5 +1,3 @@
-/* Boundaries */
-
 :host {
   display: flex;
   justify-content: center;
@@ -10,12 +8,29 @@
 .timeline-boundary-line {
   display: flex;
   flex: 1 1 100%;
-  border-top: 1px dashed #777;
+  border-top: 1px dashed #9e8261;
 }
 
 .timeline-boundary-value {
   margin: 0 20px;
-  white-space: nowrap;
-  font-size: 18px;
+  color: #9c815f;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  font-size: 20px;
   letter-spacing: 0.02em;
+  text-shadow: 1px 1px #111;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .timeline-boundary-value {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 599px) {
+  .timeline-boundary-value {
+    margin: 0 15px;
+    font-size: 16px;
+  }
 }
