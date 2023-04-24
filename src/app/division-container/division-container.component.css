@@ -255,9 +255,9 @@
 }
 
 .division-description li {
+  display: list-item;
   margin-bottom: 10px;
   padding-left: 10px;
-  list-style: '⮞';
 }
 
 .division-description li:last-of-type {
@@ -265,6 +265,7 @@
 }
 
 .division-description li::marker {
+  content: "\2B9E";
   font-size: smaller;
 }
 
@@ -293,6 +294,9 @@
   }
   .division-description li {
     margin-bottom: 8px;
+  }
+  .division-description li::marker {
+    content: "\27A4";
   }
 }
 
