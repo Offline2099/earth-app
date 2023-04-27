@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 
 import { DivisionContainer } from '../data/interfaces';
 
@@ -13,6 +13,8 @@ export class DivisionContainerComponent implements OnInit {
   @Input() division!: DivisionContainer;
   @Input() reverse: boolean = true;
 
+  @HostBinding('attr.id') hostId: string = '';
+
   dType: string = '';
   dName: string = '';
 
@@ -21,6 +23,7 @@ export class DivisionContainerComponent implements OnInit {
   ngOnInit(): void {
     this.dType = this.division.type.toLowerCase();
     this.dName = this.division.name.toLowerCase();
+    this.hostId = this.dName;
   }
 
   toggleSubdivisions(containers: DivisionContainer[], divisionName: string): void {

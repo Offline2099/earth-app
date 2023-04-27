@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 import { Division, DivisionContainer } from './data/interfaces';
 import { Timeline } from './data/timeline';
@@ -11,8 +12,13 @@ import { Timeline } from './data/timeline';
 export class AppComponent implements OnInit {
 
   eons: DivisionContainer[] = [];
+
   reverseState: boolean = false;
   controlButtons: string[] = ['Chronological', 'Inversed'];
+
+  sidePanelOpen: boolean = true;
+
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit() {
     this.constructDivsisionContainers();
@@ -32,6 +38,7 @@ export class AppComponent implements OnInit {
       description: d.description,
       image: d.image,
       showSubdivisions: false,
+      sidePanelBlockOpen: false,
       subdivisionContainers: 
         d.subdivisions.length ? d.subdivisions.map(s => this.constructContainer(s)) : []
     }
@@ -47,6 +54,39 @@ export class AppComponent implements OnInit {
       this.reverseState = state;
       this.reverseDivsisionContainers(this.eons);
     }
+  }
+
+  toggleSidePanel(): void {
+    this.sidePanelOpen = !this.sidePanelOpen;
+  }
+
+  navigateToDivision(containers: DivisionContainer[], name: string): void {
+    this.sidePanelOpen = false;
+    containers.forEach(d => {
+      if (d.name == name) {
+        let timer: ReturnType<typeof setTimeout> =
+          setTimeout(() => {this.scroller.scrollToAnchor(name.toLowerCase())}, 100);
+        d.showSubdivisions = false;
+        return;
+      }
+      if (this.getSubdivisionNameList(d).includes(name)) {
+        d.showSubdivisions = true;
+        this.navigateToDivision(d.subdivisionContainers, name);
+      }
+    })
+  }
+
+  getSubdivisionNameList(division: DivisionContainer): string[] {
+    let list: string[] = [];
+    if (!division.subdivisionContainers.length) return [];
+    division.subdivisionContainers.forEach(subdivision => {
+      list.push(subdivision.name);
+    });
+    division.subdivisionContainers.forEach(subdivision => {
+      if (!subdivision.subdivisionContainers.length) return;
+      list.push(...this.getSubdivisionNameList(subdivision));
+    });
+    return list;
   }
 
 }

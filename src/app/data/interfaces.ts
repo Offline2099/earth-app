@@ -15,5 +15,6 @@ export interface Division {
 
 export interface DivisionContainer extends Division {
   showSubdivisions: boolean;
+  sidePanelBlockOpen: boolean;
   subdivisionContainers: DivisionContainer[];
 }

@@ -47,6 +47,33 @@
 
 </div>
 
+<!-- Navigation & Options -->
+<div 
+  class="side-panel-button"
+  (click)="toggleSidePanel()">
+  <span 
+    *ngIf="!sidePanelOpen"
+    class="side-panel-button-hamburger">&#9776;</span>
+  <span 
+    *ngIf="sidePanelOpen"
+    class="side-panel-button-cross">&#9587;</span>
+</div>
+<div 
+  class="side-panel"
+  [ngClass]="{'side-panel-open': sidePanelOpen}">
+  <div class="side-panel-header">Quick Navigation</div>
+  <app-side-panel-nav-block
+    *ngFor="let eon of eons"
+    [container]="eon"
+    (linkClicked)="navigateToDivision(eons, $event)">
+  </app-side-panel-nav-block>
+</div>
+<div 
+  *ngIf="sidePanelOpen" 
+  class="page-blanket"
+  (click)="toggleSidePanel()">
+</div>
+
 
 <!-- Do I even need router for this project? -->
 <router-outlet></router-outlet>
