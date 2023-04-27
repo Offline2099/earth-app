@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 
 import { Division, DivisionContainer } from './data/interfaces';
@@ -16,12 +16,18 @@ export class AppComponent implements OnInit {
   reverseState: boolean = false;
   controlButtons: string[] = ['Chronological', 'Inversed'];
 
-  sidePanelOpen: boolean = true;
+  sidePanelOpen: boolean = false;
+  verticalOffset: number = 0;
 
   constructor(private scroller: ViewportScroller) { }
 
   ngOnInit() {
     this.constructDivsisionContainers();
+  }
+
+  @HostListener("window:scroll", []) onWindowScroll() {
+    this.verticalOffset = 
+      window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   }
 
   constructDivsisionContainers(): void {

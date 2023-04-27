@@ -203,6 +203,11 @@
   text-align: center;
   user-select: none;
   cursor: pointer;
+  animation: fadeIn .3s;
+}
+
+.side-panel-button.side-panel-button-hidden {
+  display: none;
 }
 
 .side-panel-button-hamburger,

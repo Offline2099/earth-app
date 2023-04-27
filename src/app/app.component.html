@@ -50,6 +50,7 @@
 <!-- Navigation & Options -->
 <div 
   class="side-panel-button"
+  [ngClass]="{'side-panel-button-hidden': !sidePanelOpen && verticalOffset < 100}"
   (click)="toggleSidePanel()">
   <span 
     *ngIf="!sidePanelOpen"
