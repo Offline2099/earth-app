@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 import { DivisionContainer } from '../data/interfaces';
 
@@ -18,7 +19,7 @@ export class DivisionContainerComponent implements OnInit {
   dType: string = '';
   dName: string = '';
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
     this.dType = this.division.type.toLowerCase();
@@ -41,6 +42,12 @@ export class DivisionContainerComponent implements OnInit {
         this.toggleSubdivisions(division.subdivisionContainers, divisionName);
       });
     }
+  }
+
+  hideSubdivisions(containers: DivisionContainer[], divisionName: string): void {
+    this.toggleSubdivisions(containers, divisionName);
+    let timer: ReturnType<typeof setTimeout> =
+      setTimeout(() => {this.scroller.scrollToAnchor(divisionName.toLowerCase())}, 100);
   }
 
 }

@@ -12,15 +12,17 @@
     'subdivisions-displayed': division.showSubdivisions
   }">
 
+  <!-- Outer Container -->
   <div 
     class="division-data-container-outer type-{{dType}}"
     [ngClass]="{'subdivisions-displayed': division.showSubdivisions}">
 
-    <!-- Division Name -->
+    <!-- Inner Container -->
     <div class="division-data-container-inner type-{{dType}}">
 
       <div class="division-info-container">
         
+        <!-- Division Name and Duration -->
         <div class="division-name">{{division.name}} {{division.type}}</div>
         <div class="division-duration">
           <div>
@@ -36,19 +38,21 @@
 
       </div>
       
+      <!-- Division Image -->
       <div 
         *ngIf="division.image" 
         class="division-image-container">
         <img src="./assets/img/{{dType}}/{{dName}}.jpg">
       </div>
 
+      <!-- Subdivisions Button (Inner) -->
       <div 
         *ngIf="division.showSubdivisions"
         class="timeline-button-container timeline-button-container-inner">
         <app-timeline-button
           *ngIf="division.subdivisions.length"
           text="Hide {{division.subdivisions[0].type}}s"
-          (click)="toggleSubdivisions(containers, division.name)">
+          (click)="hideSubdivisions(containers, division.name)">
         </app-timeline-button>
       </div>
 
@@ -104,7 +108,7 @@
       text2="({{division.name}} {{division.type}})"
       blockType="{{dType}}"
       buttonType="bottom"
-      (click)="toggleSubdivisions(containers, division.name)">
+      (click)="hideSubdivisions(containers, division.name)">
     </app-timeline-button>
   </div>
 
