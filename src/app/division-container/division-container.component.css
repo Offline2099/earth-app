@@ -34,11 +34,11 @@
 .division-body.type-eon,
 .division-body.type-eon:before {
   border-radius: 0;
-  width: calc(100% + 10px);
 }
 
 .division-body.type-eon:before {
   left: -5px;
+  width: calc(100% + 10px);
 }
 
 .division-body.type-era,
