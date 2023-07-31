@@ -1,0 +1,36 @@
+
+<!-- Controls -->
+<div class="controls">
+
+  <div class="controls-label">Timeline Direction: </div>
+
+  <div 
+    *ngFor="let button of controls; index as i"
+    class="controls-button"
+    [ngClass]="{'controls-button-selected': i ? invert : !invert}"
+    (click)="setTimelineState(i ? true : false)">
+
+    <div>{{button}}</div>
+    <div class="controls-button-underline"></div>
+
+  </div>
+
+</div>
+
+<!-- Timeline -->
+<div class="timeline-wrapper a-{{invert}}">
+
+  <div class="timeline-image">
+    <img src="./assets/img/timeline/timeline-{{invert ? 'end' : 'start' }}.jpg">
+  </div>
+  
+  <app-timeline-division-group
+    [group]="timeline"
+    [invert]="invert">
+  </app-timeline-division-group>
+
+  <div class="timeline-image">
+    <img src="./assets/img/timeline/timeline-{{invert ? 'start' : 'end' }}.jpg">
+  </div>
+
+</div>

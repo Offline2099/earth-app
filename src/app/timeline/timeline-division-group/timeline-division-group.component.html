@@ -1,0 +1,109 @@
+
+<ng-container *ngFor="let block of group">
+
+  <app-timeline-boundary
+    *ngIf="block.division.type == 'Eon' || block != group[0]"
+    [value]="invert ? block.division.end : block.division.start">
+  </app-timeline-boundary>
+
+  <!-- Timeline Division Body -->
+  <div 
+    id="{{block.division.name | lowercase}}"
+    class="division-body 
+      type-{{block.division.type | lowercase}} 
+      background-{{block.division.name | lowercase}}"
+    [ngClass]="{'block-collapsed': block.collapsed}">
+
+    <div class="division-heading">
+      <span 
+        *ngFor="let anc of block.ancestors"
+        class="division-heading-ancestor">
+        <span 
+          class="division-heading-ancestor-text"
+          (click)="navigateToDivision(anc.name)">{{anc.name}} {{anc.type}}</span>
+      </span>
+      <span 
+        class="division-heading-name"
+        (click)="toggleBlock(block)">{{block.division.name}} {{block.division.type}}</span>
+    </div>
+
+    <div class="division-data">
+
+      <div class="division-card">
+
+        <!-- Timeline Division Name and Duration -->
+        <div class="division-info">
+
+          <div class="division-name">
+            <span>{{block.division.name}} {{block.division.type}}</span>
+            <div 
+              class="division-collapse-button"
+              [ngClass]="{'button-above': block.division.image}"
+              (click)="toggleBlock(block)">&#9650;</div>
+          </div>
+
+          <div class="division-duration">
+            <div>
+              <span>{{block.division.start}}</span>
+              <span *ngIf="block.division.end > 0"> - {{block.division.end}}</span>
+              <span *ngIf="block.division.end == 0"> Million Years Ago - </span> 
+            </div>
+            <div>
+              <span *ngIf="block.division.end > 0">Million Years Ago</span>
+              <span *ngIf="block.division.end == 0">Present Time</span> 
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline Division Image -->
+        <div 
+          *ngIf="block.division.image" 
+          class="division-image-container">
+          <img src="./assets/img/{{block.division.type | lowercase}}/{{block.division.name | lowercase}}.jpg"/>
+        </div>
+
+      </div>
+
+      <!-- Timeline Division Description -->
+      <div 
+        class="division-description"
+        [ngClass]="{'description-collapsed': !block.showSummary}">
+        <div 
+          *ngIf="block.division.type == 'Eon' || block.subBlocks.length"
+          class="division-description-header"
+          (click)="toggleSummary(block)">
+          <span>{{block.division.type}} Summary</span>
+          <span class="division-description-header-triangle">&#9650;</span>
+        </div>
+        <ul>
+          <li 
+            *ngFor="let text of block.division.description" 
+            [innerHTML]="text"></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Subdivisions -->
+    <div 
+      *ngIf="block.subBlocks.length"
+      class="subdivisions-container">
+
+      <div class="vertical-line-container">
+        <div class="vertical-line"></div>
+      </div>
+
+      <app-timeline-division-group
+        [group]="block.subBlocks"
+        [invert]="invert">
+      </app-timeline-division-group>
+    </div>
+
+  </div>
+
+  <app-timeline-boundary
+    *ngIf="block.division.type == 'Eon' && block == group[group.length - 1]"
+    [value]="invert ? block.division.start : block.division.end">
+  </app-timeline-boundary>
+
+</ng-container>

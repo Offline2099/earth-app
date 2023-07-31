@@ -1,11 +1,9 @@
 
-/* Global Styles & Reset */
+/*   Global Styles & Reset   */
 
 body {
   display: flex;
-  flex-direction: column;
   min-width: 320px;
-  min-height: 100vh;
   background: #080808;
   color: #a8a8a8;
   font-family: 'Open Sans', sans-serif;
@@ -31,7 +29,7 @@ b {
 }
 
 
-/* Global Animations */
+/*   Animations   */
 
 @keyframes fadeIn {
   0% {opacity: 0;}
@@ -49,7 +47,7 @@ b {
 }
 
 
-/* Timeline Division Colors */
+/*   Timeline Division Colors   */
 
 .background-hadean {
   background: rgba(174, 2, 126, .20);

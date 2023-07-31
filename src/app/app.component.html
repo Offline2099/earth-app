@@ -1,80 +1,21 @@
 
 <!-- Header -->
-<div class="main-header">Geologic History of Earth</div>
+<div class="header">Geologic History of Earth</div>
 
 <!-- Intro Text -->
-<div class="main-intro">
-  <p>The history of our planet is much longer than the history of human civilization. Scientists study the layers of ice and rock, examine fossilized remains of extinct creatures, and use various other complex methods to learn about the past. </p>
+<div class="intro">
+  <p>The history of our planet is much longer than the history of human civilization. Scientists study the layers of ice and rock, examine fossilized remains of extinct creatures, and use various other complex methods to learn about the past.</p>
   <p>The amount of knowledge currently available about the Earth's history is enormous. We now understand that before us there have been dozens upon dozens of periods and epochs, each with its own environmental conditions, climate, geography, ecosystems and biodiversity.</p>
   <p>Here you can see a brief summary of the Earth's geologic history, learn about commonly recognized eras, and get some basic understanding of what was happening on our planet during those times.</p>
 </div>
 
-<!-- Controls -->
-<div class="main-controls">
-  <span class="main-controls-label">Timeline Direction: </span>
-  <div 
-    *ngFor="let buttonText of controlButtons; index as i"
-    class="main-controls-button"
-    [ngClass]="{'main-controls-button-selected': i ? reverseState : !reverseState}"
-    (click)="setReverseState(i ? true : false)">
-    <div>{{buttonText}}</div>
-    <div class="main-controls-button-underline"></div>
-  </div>
-</div>
-
 <!-- Timeline -->
-<div 
-  class="timeline-wrapper"
-  [ngClass]="{
-    'timeline-wrapper-normal': !reverseState,
-    'timeline-wrapper-reversed': reverseState
-  }">
+<app-timeline>
+</app-timeline>
 
-  <div class="timeline-image-wrapper">
-    <img src="./assets/img/timeline/timeline-{{reverseState ? 'end' : 'start' }}.jpg">
-  </div>
-  
-  <app-division-container
-    *ngFor="let eon of eons"
-    [containers]="eons"
-    [division]="eon"
-    [reverse]="reverseState">
-  </app-division-container>
+<!-- Side Panel -->
+<app-side-panel>
+</app-side-panel>
 
-  <div class="timeline-image-wrapper">
-    <img src="./assets/img/timeline/timeline-{{reverseState ? 'start' : 'end' }}.jpg">
-  </div>
-
-</div>
-
-<!-- Navigation & Options -->
-<div 
-  class="side-panel-button"
-  [ngClass]="{'side-panel-button-hidden': !sidePanelOpen && verticalOffset < 100}"
-  (click)="toggleSidePanel()">
-  <span 
-    *ngIf="!sidePanelOpen"
-    class="side-panel-button-hamburger">&#9776;</span>
-  <span 
-    *ngIf="sidePanelOpen"
-    class="side-panel-button-cross">&#9587;</span>
-</div>
-<div 
-  class="side-panel"
-  [ngClass]="{'side-panel-open': sidePanelOpen}">
-  <div class="side-panel-header">Quick Navigation</div>
-  <app-side-panel-nav-block
-    *ngFor="let eon of eons"
-    [container]="eon"
-    (linkClicked)="navigateToDivision(eons, $event)">
-  </app-side-panel-nav-block>
-</div>
-<div 
-  *ngIf="sidePanelOpen" 
-  class="page-blanket"
-  (click)="toggleSidePanel()">
-</div>
-
-
-<!-- Do I even need router for this project? -->
-<router-outlet></router-outlet>
+<!-- Footer -->
+<div class="footer"></div>

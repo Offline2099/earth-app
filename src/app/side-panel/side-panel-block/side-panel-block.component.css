@@ -1,4 +1,10 @@
+
 :host {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-panel-block {
   display: block;
   position: relative;
   margin: 4px 0;
@@ -8,7 +14,7 @@
   letter-spacing: 0.02em;
 }
 
-:host:before {
+.side-panel-block:before {
   content: '';
   position: absolute;
   top: 0;
@@ -30,12 +36,6 @@
 .side-panel-link {
   cursor: pointer;
   transition: .2s;
-}
-
-@media (hover: hover) {
-  .side-panel-link:hover {
-    color: #ccc;
-  }
 }
 
 .side-panel-link.type-eon {
@@ -84,6 +84,12 @@
 
 .side-panel-links-container-button-triangle {
   animation: fadeIn .3s;
+}
+
+@media (hover: hover) {
+  .side-panel-link:hover {
+    color: #ccc;
+  }
 }
 
 @media (max-width: 599px) {

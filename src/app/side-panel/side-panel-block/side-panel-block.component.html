@@ -1,0 +1,35 @@
+
+<div 
+  *ngFor="let block of group"
+  class="side-panel-block background-{{block.division.name | lowercase}}">
+  
+  <!-- Block Link -->
+  <span 
+    class="side-panel-link type-{{block.division.type | lowercase}}"
+    (click)="navigateToDivision(block.division.name)">{{block.division.name}} {{block.division.type}}</span>
+
+  <!-- Expand/Collapse Button -->
+  <span 
+    *ngIf="block.subBlocks.length" 
+    class="side-panel-links-container-button type-{{block.division.type | lowercase}}"
+    (click)="toggleSidePanelBlock(block)">
+    <span 
+      *ngIf="block.spCollapsed"
+      class="side-panel-links-container-button-triangle">&#9660;</span>
+    <span 
+      *ngIf="!block.spCollapsed"
+      class="side-panel-links-container-button-triangle">&#9650;</span>
+  </span>
+
+  <!-- Sub-Blocks -->
+  <div 
+    *ngIf="!block.spCollapsed"
+    class="side-panel-links-container-subdivisions">
+    <app-side-panel-block
+      [group]="block.subBlocks"
+      [invert]="invert"
+      (togglePanel)="toggleSidePanel()">
+    </app-side-panel-block>
+  </div>
+
+</div>

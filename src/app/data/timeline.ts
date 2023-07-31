@@ -1,9 +1,13 @@
-import { Division } from './interfaces';
+import { TimelineDivision } from '../interfaces';
 
 
-// Epochs
+/******************************************************************************
+ * 
+ *   Epochs
+ * 
+******************************************************************************/
 
-const Paleocene: Division = {
+const Paleocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Paleocene',
   start: 66,
@@ -20,7 +24,7 @@ const Paleocene: Division = {
   ]
 }
 
-const Eocene: Division = {
+const Eocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Eocene',
   start: Paleocene.end,
@@ -36,7 +40,7 @@ const Eocene: Division = {
   ]
 }
 
-const Oligocene: Division = {
+const Oligocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Oligocene',
   start: Eocene.end,
@@ -52,7 +56,7 @@ const Oligocene: Division = {
   ]
 }
 
-const Miocene: Division = {
+const Miocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Miocene',
   start: Oligocene.end,
@@ -69,7 +73,7 @@ const Miocene: Division = {
   ]
 }
 
-const Pliocene: Division = {
+const Pliocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Pliocene',
   start: Miocene.end,
@@ -85,7 +89,7 @@ const Pliocene: Division = {
   ]
 }
 
-const Pleistocene: Division = {
+const Pleistocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Pleistocene',
   start: Pliocene.end,
@@ -101,7 +105,7 @@ const Pleistocene: Division = {
   ]
 }
 
-const Holocene: Division = {
+const Holocene: TimelineDivision = {
   type: 'Epoch',
   name: 'Holocene',
   start: Pleistocene.end,
@@ -118,9 +122,13 @@ const Holocene: Division = {
 }
 
 
-// Periods
+/******************************************************************************
+ * 
+ *   Periods
+ * 
+******************************************************************************/
 
-const Siderian: Division = {
+const Siderian: TimelineDivision = {
   type: 'Period',
   name: 'Siderian',
   start: 2500,
@@ -135,7 +143,7 @@ const Siderian: Division = {
   ]
 }
 
-const Rhyacian: Division = {
+const Rhyacian: TimelineDivision = {
   type: 'Period',
   name: 'Rhyacian',
   start: Siderian.end,
@@ -149,7 +157,7 @@ const Rhyacian: Division = {
   ]
 }
 
-const Orosirian: Division = {
+const Orosirian: TimelineDivision = {
   type: 'Period',
   name: 'Orosirian',
   start: Rhyacian.end,
@@ -163,7 +171,7 @@ const Orosirian: Division = {
   ]
 }
 
-const Statherian: Division = {
+const Statherian: TimelineDivision = {
   type: 'Period',
   name: 'Statherian',
   start: Orosirian.end,
@@ -177,7 +185,7 @@ const Statherian: Division = {
   ]
 }
 
-const Calymmian: Division = {
+const Calymmian: TimelineDivision = {
   type: 'Period',
   name: 'Calymmian',
   start: Statherian.end,
@@ -190,7 +198,7 @@ const Calymmian: Division = {
   ]
 }
 
-const Ectasian: Division = {
+const Ectasian: TimelineDivision = {
   type: 'Period',
   name: 'Ectasian',
   start: Calymmian.end,
@@ -204,7 +212,7 @@ const Ectasian: Division = {
   ]
 }
 
-const Stenian: Division = {
+const Stenian: TimelineDivision = {
   type: 'Period',
   name: 'Stenian',
   start: Ectasian.end,
@@ -219,7 +227,7 @@ const Stenian: Division = {
   ]
 }
 
-const Tonian: Division = {
+const Tonian: TimelineDivision = {
   type: 'Period',
   name: 'Tonian',
   start: Stenian.end,
@@ -234,7 +242,7 @@ const Tonian: Division = {
   ]
 }
 
-const Cryogenian: Division = {
+const Cryogenian: TimelineDivision = {
   type: 'Period',
   name: 'Cryogenian',
   start: Tonian.end,
@@ -250,7 +258,7 @@ const Cryogenian: Division = {
   ]
 }
 
-const Ediacaran: Division = {
+const Ediacaran: TimelineDivision = {
   type: 'Period',
   name: 'Ediacaran',
   start: Cryogenian.end,
@@ -266,7 +274,7 @@ const Ediacaran: Division = {
   ]
 }
 
-const Cambrian: Division = {
+const Cambrian: TimelineDivision = {
   type: 'Period',
   name: 'Cambrian',
   start: Ediacaran.end,
@@ -283,7 +291,7 @@ const Cambrian: Division = {
   ]
 }
 
-const Ordovician: Division = {
+const Ordovician: TimelineDivision = {
   type: 'Period',
   name: 'Ordovician',
   start: Cambrian.end,
@@ -299,7 +307,7 @@ const Ordovician: Division = {
   ]
 }
 
-const Silurian: Division = {
+const Silurian: TimelineDivision = {
   type: 'Period',
   name: 'Silurian',
   start: Ordovician.end,
@@ -315,7 +323,7 @@ const Silurian: Division = {
   ]
 }
 
-const Devonian: Division = {
+const Devonian: TimelineDivision = {
   type: 'Period',
   name: 'Devonian',
   start: Silurian.end,
@@ -333,7 +341,7 @@ const Devonian: Division = {
   ]
 }
 
-const Carboniferous: Division = {
+const Carboniferous: TimelineDivision = {
   type: 'Period',
   name: 'Carboniferous',
   start: Devonian.end,
@@ -350,7 +358,7 @@ const Carboniferous: Division = {
   ]
 }
 
-const Permian: Division = {
+const Permian: TimelineDivision = {
   type: 'Period',
   name: 'Permian',
   start: Carboniferous.end,
@@ -366,7 +374,7 @@ const Permian: Division = {
   ]
 }
 
-const Triassic: Division = {
+const Triassic: TimelineDivision = {
   type: 'Period',
   name: 'Triassic',
   start: Permian.end,
@@ -383,7 +391,7 @@ const Triassic: Division = {
   ]
 }
 
-const Jurassic: Division = {
+const Jurassic: TimelineDivision = {
   type: 'Period',
   name: 'Jurassic',
   start: Triassic.end,
@@ -401,7 +409,7 @@ const Jurassic: Division = {
   ]
 }
 
-const Cretaceous: Division = {
+const Cretaceous: TimelineDivision = {
   type: 'Period',
   name: 'Cretaceous',
   start: Jurassic.end,
@@ -418,7 +426,7 @@ const Cretaceous: Division = {
   ]
 }
 
-const Paleogene: Division = {
+const Paleogene: TimelineDivision = {
   type: 'Period',
   name: 'Paleogene',
   start: Cretaceous.end,
@@ -434,7 +442,7 @@ const Paleogene: Division = {
   ]
 }
 
-const Neogene: Division = {
+const Neogene: TimelineDivision = {
   type: 'Period',
   name: 'Neogene',
   start: Paleogene.end,
@@ -450,7 +458,7 @@ const Neogene: Division = {
   ]
 }
 
-const Quaternary: Division = {
+const Quaternary: TimelineDivision = {
   type: 'Period',
   name: 'Quaternary',
   start: Neogene.end,
@@ -469,9 +477,13 @@ const Quaternary: Division = {
 }
 
 
-// Eras
+/******************************************************************************
+ * 
+ *   Eras
+ * 
+******************************************************************************/
 
-const Eoarchean: Division = {
+const Eoarchean: TimelineDivision = {
   type: 'Era',
   name: 'Eoarchean',
   start: 4000,
@@ -485,7 +497,7 @@ const Eoarchean: Division = {
   ]
 }
 
-const Paleoarchean: Division = {
+const Paleoarchean: TimelineDivision = {
   type: 'Era',
   name: 'Paleoarchean',
   start: Eoarchean.end,
@@ -499,7 +511,7 @@ const Paleoarchean: Division = {
   ]
 }
 
-const Mesoarchean: Division = {
+const Mesoarchean: TimelineDivision = {
   type: 'Era',
   name: 'Mesoarchean',
   start: Paleoarchean.end,
@@ -513,7 +525,7 @@ const Mesoarchean: Division = {
   ]
 }
 
-const Neoarchean: Division = {
+const Neoarchean: TimelineDivision = {
   type: 'Era',
   name: 'Neoarchean',
   start: Mesoarchean.end,
@@ -527,7 +539,7 @@ const Neoarchean: Division = {
   ]
 }
 
-const Paleoproterozoic: Division = {
+const Paleoproterozoic: TimelineDivision = {
   type: 'Era',
   name: 'Paleoproterozoic',
   start: Neoarchean.end,
@@ -543,7 +555,7 @@ const Paleoproterozoic: Division = {
   ]
 }
 
-const Mesoproterozoic: Division = {
+const Mesoproterozoic: TimelineDivision = {
   type: 'Era',
   name: 'Mesoproterozoic',
   start: Paleoproterozoic.end,
@@ -559,7 +571,7 @@ const Mesoproterozoic: Division = {
   ]
 }
 
-const Neoproterozoic: Division = {
+const Neoproterozoic: TimelineDivision = {
   type: 'Era',
   name: 'Neoproterozoic',
   start: Mesoproterozoic.end,
@@ -576,7 +588,7 @@ const Neoproterozoic: Division = {
   ]
 }
 
-const Paleozoic: Division = {
+const Paleozoic: TimelineDivision = {
   type: 'Era',
   name: 'Paleozoic',
   start: Neoproterozoic.end,
@@ -592,7 +604,7 @@ const Paleozoic: Division = {
   ]
 }
 
-const Mesozoic: Division = {
+const Mesozoic: TimelineDivision = {
   type: 'Era',
   name: 'Mesozoic',
   start: Paleozoic.end,
@@ -611,7 +623,7 @@ const Mesozoic: Division = {
   ]
 }
 
-const Cenozoic: Division = {
+const Cenozoic: TimelineDivision = {
   type: 'Era',
   name: 'Cenozoic',
   start: Mesozoic.end,
@@ -629,9 +641,13 @@ const Cenozoic: Division = {
 }
 
 
-// Eons
+/******************************************************************************
+ * 
+ *   Eons
+ * 
+******************************************************************************/
 
-const Hadean: Division = {
+const Hadean: TimelineDivision = {
   type: 'Eon',
   name: 'Hadean',
   start: 4567,
@@ -650,7 +666,7 @@ const Hadean: Division = {
   ]
 }
 
-const Archean: Division = {
+const Archean: TimelineDivision = {
   type: 'Eon',
   name: 'Archean',
   start: Hadean.end,
@@ -667,7 +683,7 @@ const Archean: Division = {
   ]
 }
 
-const Proterozoic: Division = {
+const Proterozoic: TimelineDivision = {
   type: 'Eon',
   name: 'Proterozoic',
   start: Archean.end,
@@ -684,7 +700,7 @@ const Proterozoic: Division = {
   ]
 }
 
-const Phanerozoic: Division = {
+const Phanerozoic: TimelineDivision = {
   type: 'Eon',
   name: 'Phanerozoic',
   start: Proterozoic.end,
@@ -701,8 +717,12 @@ const Phanerozoic: Division = {
 }
 
 
-// Timeline
+/******************************************************************************
+ * 
+ *   Timeline
+ * 
+******************************************************************************/
 
-export const Timeline: Division[] = [
+export const Timeline: TimelineDivision[] = [
   Hadean, Archean, Proterozoic, Phanerozoic
 ];

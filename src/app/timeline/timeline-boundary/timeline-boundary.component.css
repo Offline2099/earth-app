@@ -29,6 +29,9 @@
 }
 
 @media (max-width: 599px) {
+  :host {
+    margin: 6px 8px;
+  }
   .timeline-boundary-value {
     margin: 0 15px;
     font-size: 16px;

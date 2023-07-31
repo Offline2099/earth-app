@@ -14,7 +14,6 @@ export class TimelineBoundaryComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit(): void {
-    this.formBoundaryText();
   }
 
   ngOnChanges(): void {

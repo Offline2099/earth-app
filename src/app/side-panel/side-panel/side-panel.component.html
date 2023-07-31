@@ -1,0 +1,35 @@
+
+<!-- Button -->
+<div 
+  class="side-panel-button"
+  [ngClass]="{'button-hidden': !open && vOffset < 200}"
+  (click)="togglePanel()">
+  <span 
+    *ngIf="!open"
+    class="side-panel-button-hamburger">&#9776;</span>
+  <span 
+    *ngIf="open"
+    class="side-panel-button-cross">&#9587;</span>
+</div>
+
+<!-- Panel -->
+<div 
+  class="side-panel"
+  [ngClass]="{'side-panel-open': open}">
+
+  <div class="side-panel-header">Quick Navigation</div>
+
+  <app-side-panel-block
+    [group]="timeline"
+    [invert]="false"
+    (togglePanel)="togglePanel()">
+  </app-side-panel-block>
+
+</div>
+
+<!-- Blanket -->
+<div 
+  *ngIf="open" 
+  class="page-blanket"
+  (click)="togglePanel()">
+</div>
