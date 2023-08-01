@@ -1,6 +1,10 @@
 
 /*   Global Styles & Reset   */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   min-width: 320px;
@@ -9,7 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   cursor: default;
-  animation: fadeIn 1s;
+  animation: fadeIn 1s;  
 }
 
 * {

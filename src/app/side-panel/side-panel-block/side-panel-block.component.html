@@ -1,35 +1,54 @@
 
 <div 
   *ngFor="let block of group"
-  class="side-panel-block background-{{block.division.name | lowercase}}">
-  
-  <!-- Block Link -->
-  <span 
-    class="side-panel-link type-{{block.division.type | lowercase}}"
-    (click)="navigateToDivision(block.division.name)">{{block.division.name}} {{block.division.type}}</span>
+  class="side-panel-block 
+    background-{{block.division.name | lowercase}}
+    type-{{block.division.type | lowercase}}"
+  [ngClass]="{
+    'block-collapsed': block.spCollapsed,
+    'no-subdivisions': block.subBlocks.length == 0
+  }">
 
-  <!-- Expand/Collapse Button -->
-  <span 
-    *ngIf="block.subBlocks.length" 
-    class="side-panel-links-container-button type-{{block.division.type | lowercase}}"
-    (click)="toggleSidePanelBlock(block)">
-    <span 
-      *ngIf="block.spCollapsed"
-      class="side-panel-links-container-button-triangle">&#9660;</span>
-    <span 
-      *ngIf="!block.spCollapsed"
-      class="side-panel-links-container-button-triangle">&#9650;</span>
-  </span>
+  <div class="side-panel-division">
+    
+    <!-- Division Link -->
+    <div 
+      class="division-link"
+      (click)="navigateToDivision(block.division.name)">
+      <div class="division-name">{{block.division.name}} {{block.division.type}}</div>
+      <div class="division-duration">
+        <span *ngFor="let text of (invert ? block.duration.inverse : block.duration.normal)">{{text}}</span>      
+      </div>
+    </div>
 
-  <!-- Sub-Blocks -->
+    <!-- Expand/Collapse Button -->
+    <div 
+      *ngIf="block.subBlocks.length" 
+      class="subdivisions-button"
+      (click)="toggleSidePanelBlock(block)">
+      <span 
+        *ngIf="block.spCollapsed"
+        class="subdivisions-button-triangle">&#9660;</span>
+      <span 
+        *ngIf="!block.spCollapsed"
+        class="subdivisions-button-triangle">&#9650;</span>
+    </div>
+
+  </div>
+
+  <!-- Subdivisions -->
   <div 
-    *ngIf="!block.spCollapsed"
-    class="side-panel-links-container-subdivisions">
+    *ngIf="block.subBlocks.length && !block.spCollapsed"
+    class="subdivisions-container">
+
+    <div class="vertical-line"></div>
+
     <app-side-panel-block
       [group]="block.subBlocks"
       [invert]="invert"
       (togglePanel)="toggleSidePanel()">
     </app-side-panel-block>
+
   </div>
 
 </div>
