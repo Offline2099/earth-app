@@ -43,15 +43,7 @@
           </div>
 
           <div class="division-duration">
-            <div>
-              <span>{{block.division.start}}</span>
-              <span *ngIf="block.division.end > 0"> - {{block.division.end}}</span>
-              <span *ngIf="block.division.end == 0"> Million Years Ago - </span> 
-            </div>
-            <div>
-              <span *ngIf="block.division.end > 0">Million Years Ago</span>
-              <span *ngIf="block.division.end == 0">Present Time</span> 
-            </div>
+            <div *ngFor="let line of (invert ? block.duration.inverse : block.duration.normal)">{{line}}</div>      
           </div>
         </div>
         

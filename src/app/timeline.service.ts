@@ -30,7 +30,21 @@ export class TimelineService {
       collapsed: d.type != 'Eon',
       showSummary: d.type != 'Eon' && !length,
       spCollapsed: d.type != 'Eon',
+      duration: this.divisionDurationLines(d),
       subBlocks: length ? d.subdivisions.map(s => this.constructDivisionBlock(s, line)) : []
+    }
+  }
+
+  private divisionDurationLines(d: TimelineDivision): {normal: string[], inverse: string[]} {
+    return {
+      normal: [
+        d.start + (d.end > 0 ? ' - ' + d.end : ' Million Years Ago - '),
+        d.end > 0 ? 'Million Years Ago' : 'Present Time'
+      ],
+      inverse: [
+        d.end > 0 ? d.end + ' - ' + d.start : 'Present Time - ',
+        d.end > 0 ? 'Million Years Ago' : d.start + ' Million Years Ago'
+      ]
     }
   }
 

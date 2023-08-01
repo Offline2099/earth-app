@@ -31,5 +31,9 @@ export interface TimelineDivisionBlock {
   collapsed: boolean;
   showSummary: boolean;
   spCollapsed: boolean;
+  duration: {
+    normal: string[];
+    inverse: string[];
+  }
   subBlocks: TimelineDivisionBlock[];
 }
