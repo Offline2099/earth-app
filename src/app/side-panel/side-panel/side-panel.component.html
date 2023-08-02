@@ -2,7 +2,7 @@
 <!-- Button -->
 <div 
   class="side-panel-button"
-  [ngClass]="{'button-hidden': !open && vOffset < 200}"
+  [ngClass]="{'button-visible': open || vOffset > 200}"
   (click)="togglePanel()">
   <span 
     *ngIf="!open"

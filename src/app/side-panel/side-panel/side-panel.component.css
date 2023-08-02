@@ -49,12 +49,12 @@
 
 @media (max-width: 599px) {
   .side-panel-button {
+    display: none;
     top: 5px;
     right: 5px;
   }
-  .side-panel-button.button-hidden {
-    opacity: 0;
-    pointer-events: none;
+  .side-panel-button.button-visible {
+    display: flex;
   }
 }
 
