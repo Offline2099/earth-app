@@ -74,14 +74,3 @@
     font-size: 14px;
   }
 }
-
-
-/*   Footer   */
-
-.footer {
-  display: flex;
-  width: 100%;
-  min-height: 200px;
-  margin-top: auto;
-  background: #222;
-}

@@ -13,6 +13,9 @@ import { TimelineBoundaryComponent } from './timeline/timeline-boundary/timeline
 import { SidePanelComponent } from './side-panel/side-panel/side-panel.component';
 import { SidePanelBlockComponent } from './side-panel/side-panel-block/side-panel-block.component';
 
+// Footer
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,8 @@ import { SidePanelBlockComponent } from './side-panel/side-panel-block/side-pane
     TimelineDivisionGroupComponent,
     TimelineBoundaryComponent,
     SidePanelComponent,
-    SidePanelBlockComponent    
+    SidePanelBlockComponent,
+    FooterComponent    
   ],
   imports: [
     BrowserModule
