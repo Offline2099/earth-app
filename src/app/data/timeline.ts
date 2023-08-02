@@ -65,11 +65,11 @@ const Miocene: TimelineDivision = {
   subdivisions: [],
   description: [
     '<b>Africa</b> collides with <b>Europe</b>, forming the Mediterranean Sea and allowing an interchange of its fauna with <b>Eurasia</b>.',
-    'The epoch begins with a rapid cooling about 23 million years ago. Temperatures rise between 21 and 15 million years ago, then take a sharp drop once again and continue to decrease.',
-    '<b>Grassland ecosystems</b> continue to expand, providing habitats for grazing animals (horses, deer, camels, rhinoceroses, hippos) pursued by large predators. Many groups of modern <b>birds</b> appear (ducks, owls, cockatoos, crows). <b>Snakes</b> significantly diversify.',
+    'The epoch begins with a rapid cooling about 23 million years ago. Temperatures rise between 21 and 15 million years ago, then drop sharply once again and continue to decrease.',
+    '<b>Grassland ecosystems</b> further expand, providing habitats for grazing animals (horses, deer, camels, rhinoceroses, hippopotamuses) pursued by large predators. Many groups of modern <b>birds</b> appear (ducks, owls, cockatoos, crows). <b>Snakes</b> significantly diversify.',
     'Multiple species of <b>apes</b> emerge and spread across Africa and Eurasia. First <b>hominins</b> (apes capable of walking on two legs) appear.',
     '<b>Kelp forests</b> spread in shallow seas, creating a new comfortable environment for fish and invertebrates. <b>Whales</b> reach their peak diversity in the oceans. New species of large-sized <b>sharks</b> appear.',
-    'Between 14.8 and 14.5 million years ago, many terrestrial and aquatic organisms become extinct due to the changes in global climate. This event is known as the <b>Middle Miocene disruption</b>.'
+    'Between 14.8 and 14.5 million years ago, many terrestrial and aquatic species become extinct due to rapid changes in global climate. This event is known as the <b>Middle Miocene disruption</b>.'
   ]
 }
 
@@ -81,7 +81,7 @@ const Pliocene: TimelineDivision = {
   image: true,
   subdivisions: [],
   description: [
-    'A land bridge establishes between <b>North America</b> and <b>South America</b>, allowing an interchange of fauna and significantly altering oceanic currents.',
+    'A land bridge establishes between <b>North America</b> and <b>South America</b>. It allows an interchange of fauna between the two continents and significantly alters the pattern of oceanic currents.',
     'The climate is gradually cooling, although still remains slightly warmer than modern. Sea level remains about 25 meters higher than today. An ice sheet forms over Greenland about 3 million years ago.',
     '<b>Deciduous forests</b> (comprised of plants that shed leaves seasonally) and <b>grasslands</b> become more common. <b>Tundra</b> covers large areas at high latitudes. Tropical forests are limited to a narrow band near the equator.',
     'Both marine and continental faunas become more similar to modern, yet present-day animals still live side by side with many prehistoric species.',
@@ -98,9 +98,9 @@ const Pleistocene: TimelineDivision = {
   subdivisions: [],
   description: [
     'Continents remain essentially near their modern positions, moving no more than 100 km since the beginning of the epoch.',
-    'The climate experiences repeated cycles of glaciations, commonly known as <b>Ice Ages</b>, with continental ice sheets growing and retreating every 40-100 thousand years. Sea levels drop during colder phases and rise during warmer phases, with an amplitude of about 100-120 meters.',
-    'Flora and fauna are mostly similar to the modern state, with many species retreating southward with each cold phase and spreading back to higher latitudes during warm phases of the climate.',
-    'Large land mammals (such as mammoths, mastodons, woolly rhinoceros, saber-toothed cats, giant sloths, cave bears, dire wolves) are common. They disappear near the end of the epoch, in a process known as the <b>Quaternary extinction</b> (120 to 11 thousand years ago).',
+    'The climate experiences repeated cycles of glaciation, commonly known as <b>Ice Ages</b>. Continental ice sheets grow and retreat every 40-100 thousand years. Sea level drops during colder phases and rises during warmer phases, with an amplitude of about 100-120 meters.',
+    'Flora and fauna are mostly similar to the modern state. Many species retreat southward with each cold phase and spread back to higher latitudes during warm phases of the climate.',
+    'Large land mammals (such as mammoth, mastodon, woolly rhinoceros, saber-toothed cat, giant sloth, cave bear, dire wolf) are common. They disappear near the end of the epoch, in a process known as the <b>Quaternary extinction</b> (120 to 11 thousand years ago).',
     'Anatomically modern <b>humans</b> appear (<b>Homo erectus</b> about 2 million years ago, <b>Homo sapiens</b> about 300 thousand years ago) and spread from Africa to other continents. They learn to use fire for cooking and heating.'
   ]
 }
@@ -113,10 +113,10 @@ const Holocene: TimelineDivision = {
   image: true,
   subdivisions: [],
   description: [
-    'Continents move less than 1 km over a span of only ten thousand years. However, the melting of ice causes sea level to rise by about 65 meters since the beginning of the epoch, altering the coastlines.',
-    'The climate is warming between 11 and 8 thousand years ago, then remains fairly stable with a gradual cooling trend until about 150 years ago.',
+    'Since the span of only ten thousand years is rather small on the geologic time scale, continents move by less than 1 km during this epoch. However, the melting of ice causes sea level to rise about 65 meters since the beginning of the Holocene, considerably altering coastlines.',
+    'Following the much colder conditions of the last Ice Age, the climate is warming between 11 and 8 thousand years ago. It then remains fairly stable with a gradual cooling trend until about 150 years ago.',
     'A brief cooling event occurs about 8200 years ago and lasts about 400 years. Another mild cooling, known as the <b>Little Ice Age</b>, continues between the 14th and 19th centuries. A rapid increase in global temperatures is observed over the last 150 years.',
-    'All recorded <b>human history</b> takes place during this epoch. With the development of agriculture between 10 and 7 thousand years ago, humans establish permanent settlements and form ancient civilizations. As a result of gradual scientific and technological progress, human civilization becomes global.',
+    'All recorded <b>human history</b> takes place during this epoch. With the development of agriculture between 10 and 7 thousand years ago, humans establish permanent settlements and form ancient civilizations. As a result of gradual scientific and technological progress, the human civilization becomes global.',
     'Human activity causes a significant decline in biodiversity, known as the <b>Holocene extinction</b>. Many species of bacteria, fungi, plants and animals disappear. This process is ongoing.'
   ]
 }
@@ -452,7 +452,7 @@ const Neogene: TimelineDivision = {
   description: [
     'Landmasses continue to drift towards their modern positions. <b>Africa</b> collides with <b>Europe</b>, forming the Mediterranean Sea. A land bridge establishes between <b>North America</b> and <b>South America</b>.',
     'A rapid cooling occurs about 23 million years ago. Temperatures rise between 21 and 15 million years ago, then a strong cooling trend establishes again and continues throughout the period.',
-    '<b>Grassland ecosystems</b> and <b>temperate forests</b> become widespread, tropical forests exist only near the equator. <b>Kelp forests</b> spread in shallow seas at low latitudes.',
+    '<b>Grassland ecosystems</b> and <b>temperate forests</b> become widespread. <b>Tundra</b> covers large areas at high latitudes. Tropical forests exist only near the equator. <b>Kelp forests</b> spread in shallow seas at low latitudes.',
     'Land <b>mammals</b> keep evolving and taking their modern shapes. Many groups of modern <b>birds</b> (ducks, owls, cockatoos, crows) and <b>snakes</b> appear. <b>Whales</b> reach their peak diversity, new large-sized <b>sharks</b> evolve.',
     'Multiple species of <b>apes</b> appear and spread across Africa and Eurasia. <b>Hominins</b> (the ancestors of modern humans) develop more complex brain and the ability to walk on two legs. First stone tools are made about 3.4 million years ago, marking the beginning of the <b>Stone Age</b>.'
   ]
@@ -467,11 +467,11 @@ const Quaternary: TimelineDivision = {
   subdivisions: [Pleistocene, Holocene],
   description: [
     'Continents remain essentially near their modern positions, moving no more than 100 kilometers since the beginning of the period.',
-    'The climate is marked by repeated cycles of glaciations, commonly known as <b>Ice Ages</b>, with continental ice sheets growing and retreating every 40-100 thousand years. Sea levels drop during colder phases and rise during warmer phases, with an amplitude of about 100-120 meters.',
+    'The climate is marked by repeated cycles of glaciation, commonly known as <b>Ice Ages</b>. Continental ice sheets grow and retreat every 40-100 thousand years. Sea level drops during colder phases and rises during warmer phases, with an amplitude of about 100-120 meters.',
     'Flora and fauna are mostly similar to the modern state. Many species retreat southward with each cold phase and spread to higher latitudes during warm phases of the climate.',
-    'Large land mammals (such as mammoths, woolly rhinoceros, saber-toothed cats) remain common for most of the period. They disappear between 120 and 11 thousand years ago in a process known as the <b>Quaternary extinction</b>.',
+    'Large land mammals (such as mammoth, woolly rhinoceros, saber-toothed cat) remain common for most of the period. They disappear between 120 and 11 thousand years ago in a process known as the <b>Quaternary extinction</b>.',
     'Anatomically modern <b>humans</b> appear (<b>Homo erectus</b> about 2 million years ago, <b>Homo sapiens</b> about 300 thousand years ago) and spread from Africa to other continents.',
-    'All recorded <b>human history</b> takes place within the last 10 thousand years. With the development of agriculture, humans establish permanent settlements and form ancient civilizations. As a result of gradual scientific and technological progress, human civilization becomes global.',
+    'All recorded <b>human history</b> takes place within the last 10 thousand years. With the development of agriculture, humans establish permanent settlements and form ancient civilizations. As a result of gradual scientific and technological progress, the human civilization becomes global.',
     'Human activity causes a significant decline in biodiversity, known as the <b>Holocene extinction</b>. Many species of bacteria, fungi, plants and animals disappear. This process is ongoing.'
   ]
 }
