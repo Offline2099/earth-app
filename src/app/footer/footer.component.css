@@ -51,7 +51,7 @@
 .footer-image-decorative {
   width: min(100% - 20px, 960px);
   margin: 25px auto;
-  transform: translateX(-10%);
+  transform: translateX(-6%);
   user-select: none;
 }
 
