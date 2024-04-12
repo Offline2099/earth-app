@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 import { TimelineDivisionBlock } from '../../interfaces';
 import { TimelineService } from '../../timeline.service';
@@ -8,7 +8,7 @@ import { TimelineService } from '../../timeline.service';
   templateUrl: './side-panel.component.html',
   styleUrls: ['./side-panel.component.css']
 })
-export class SidePanelComponent implements OnInit {
+export class SidePanelComponent {
 
   constructor(private t: TimelineService) { }
 
@@ -19,9 +19,6 @@ export class SidePanelComponent implements OnInit {
   timeline: TimelineDivisionBlock[] = this.t.getTimeline();
   open: boolean = false;
   vOffset: number = 0;
-
-  ngOnInit(): void {
-  }
 
   togglePanel(): void {
     this.open = !this.open;

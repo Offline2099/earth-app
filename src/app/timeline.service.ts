@@ -48,9 +48,9 @@ export class TimelineService {
     }
   }
 
-  private invertDivsisionGroup(blocks: TimelineDivisionBlock[]): void {
+  private invertDivisionGroup(blocks: TimelineDivisionBlock[]): void {
     blocks.reverse();
-    blocks.forEach(block => this.invertDivsisionGroup(block.subBlocks));
+    blocks.forEach(block => this.invertDivisionGroup(block.subBlocks));
   }
 
   private findBlock(name: string, group: TimelineDivisionBlock[]): TimelineDivisionBlock | undefined {
@@ -80,7 +80,7 @@ export class TimelineService {
   }
 
   public invertTimeline(): void {
-    this.invertDivsisionGroup(this.timeline);
+    this.invertDivisionGroup(this.timeline);
   }
 
   public currentScrollPos(): number {

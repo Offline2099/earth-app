@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { TimelineDivisionBlock } from '../../interfaces';
 import { TimelineService } from '../../timeline.service';
@@ -8,7 +8,7 @@ import { TimelineService } from '../../timeline.service';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
 
   constructor(private t: TimelineService) { }
 
@@ -16,9 +16,6 @@ export class TimelineComponent implements OnInit {
 
   controls: string[] = ['Chronological', 'Inverse'];
   invert: boolean = false;
-
-  ngOnInit(): void {
-  }
 
   setTimelineState(state: boolean): void {
     if (state != this.invert) {

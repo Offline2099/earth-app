@@ -1,20 +1,15 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-timeline-boundary',
   templateUrl: './timeline-boundary.component.html',
   styleUrls: ['./timeline-boundary.component.css']
 })
-export class TimelineBoundaryComponent implements OnInit, OnChanges {
+export class TimelineBoundaryComponent {
 
   @Input() value!: number;
 
   boundaryText: string = '';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   ngOnChanges(): void {
     this.formBoundaryText();
@@ -24,7 +19,7 @@ export class TimelineBoundaryComponent implements OnInit, OnChanges {
     if (this.value == 0) 
       this.boundaryText = 'Present Time';
     else 
-      this.boundaryText = '≈ ' + this.value + ' Million Years Ago';
+      this.boundaryText = `≈ ${this.value} Million Years Ago`;
   }
 
 }

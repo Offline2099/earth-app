@@ -9,7 +9,7 @@
 ******************************************************************************/
 
 export interface TimelineDivision {
-  type: string;
+  type: 'Eon' | 'Era' | 'Period' | 'Epoch';
   name: string;
   start: number;
   end: number;

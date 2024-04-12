@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { LowerCasePipe } from '@angular/common';
 
 import { TimelineDivisionBlock } from '../../interfaces';
@@ -9,7 +9,7 @@ import { TimelineService } from '../../timeline.service';
   templateUrl: './side-panel-block.component.html',
   styleUrls: ['./side-panel-block.component.css']
 })
-export class SidePanelBlockComponent implements OnInit {
+export class SidePanelBlockComponent {
 
   constructor(private t: TimelineService) { }
 
@@ -17,9 +17,6 @@ export class SidePanelBlockComponent implements OnInit {
   @Input() invert: boolean = false;
 
   @Output() togglePanel = new EventEmitter<void>();
-
-  ngOnInit(): void {
-  }
 
   toggleSidePanelBlock(block: TimelineDivisionBlock): void {
     block.spCollapsed = !block.spCollapsed;
