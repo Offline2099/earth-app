@@ -1,27 +1,23 @@
-# Earth
+# Geologic History of Earth
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+## Project Description
 
-## Development server
+A brief summary of the Earth's geologic history. Shows the structure of the geologic time scale in a simple interactive way. Gives a basic understanding of the key features and events that characterize each time interval.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* The core idea is to display the Earth's geologic history in a way that is both informative and visually enjoyable, providing a meaningful overview without going into too much detail.
 
-## Code scaffolding
+* Nested collapsible blocks offer a compact and intuitive layout for viewing and navigating the timeline structure, also making it easier to remember.
+    
+* The timeline can be displayed in either direction: chronologically (starting from the formation of the planet) or inversely (diving from the present into older periods and epochs).
+    
+* There is a quick navigation panel on the right that allows the user to jump to any specific timeline division with a single click.
+    
+* The site utilizes Angular components recursively. This approach allows to display a fairly large structure with relatively little code.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technical Information
 
-## Build
+This project is made with Angular.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* To run the app in the development mode, run `ng serve` in the project directory. Open [http://localhost:4200](http://localhost:4200) to view it in the browser. The page will reload if you make edits.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* To build the app in the production mode, run `ng build` in the project directory. The app will be saved to the `dist/` directory.
